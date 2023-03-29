@@ -12,13 +12,13 @@
     margin-bottom: 100px;
   }
 
-  &:nth-child(2) {
-    flex-direction: row-reverse;
+  &.f_reverse {
+    flex-direction: row-reverse !important;
   }
 
-  &:last-child {
-    flex-direction: row-reverse;
-  }
+  // &:last-child {
+  //   flex-direction: row-reverse;
+  // }
 
   .wrap {
     width: 100%;
@@ -57,10 +57,10 @@
       gap: 25px;
       a {
         button {
-          color: #fdb820;
-          font-size: 50px;
+          color: #ffffff;
+          font-size: 20px;
           transition: color 0.2s;
-          border: 2px solid #fdb820;
+            // border: 2px solid #fdb820;
           border-radius: 50%;
           width: 50px;
           height: 50px;
@@ -68,6 +68,7 @@
           align-items: center;
           justify-content: center;
           padding: 10px;
+          background-color: #222325;
 
           &:hover {
             color: #d69813;
@@ -102,8 +103,8 @@
   }
   @media screen and (max-width: 767px) {
     .content h2 {
-        font-size: 40px;
-        line-height: 48px;
+      font-size: 40px;
+      line-height: 48px;
     }
   }
 }

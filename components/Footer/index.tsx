@@ -5,7 +5,7 @@ import styles2 from "./Footer.module.scss";
 import Logo from "@/components/Logo";
 import NavLink from "@/components/NavLink";
 import Socials from "@/components/Socials";
-import { BsTwitter, BsYoutube } from "react-icons/bs";
+import { BsTwitter, BsYoutube, BsInstagram } from "react-icons/bs";
 import { FaTelegramPlane, FaGithub } from "react-icons/fa";
 
 import { footerNavigation, documents } from "@/constants/navigation";
@@ -72,6 +72,15 @@ const Footer = ({}: FooterProps) => (
                     >
                         <button>
                         <FaTelegramPlane />
+                        </button>
+                    </a>
+                    <a
+                        target="_blank"
+                        rel="noreferrer"
+                        href="https://instagram.com/vincechain?utm_medium=copy_link"
+                    >
+                        <button>
+                        <BsInstagram />
                         </button>
                     </a>
                     <a

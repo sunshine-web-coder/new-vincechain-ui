@@ -9,7 +9,7 @@ export const headerNavigation = [
     },
     {
         title: "Community",
-        url: "https://ui8.net/",
+        url: "https://t.me/vincechain",
         external: true,
     },
     {

@@ -1,7 +1,7 @@
 import cn from "classnames";
 import styles from "./AboutUs.module.scss";
 import Image from "@/components/Image";
-import { BsTwitter, BsYoutube } from "react-icons/bs";
+import { BsTwitter, BsYoutube, BsInstagram } from "react-icons/bs";
 import { FaTelegramPlane, FaGithub } from "react-icons/fa";
 import { AnimationOnScroll } from "react-animation-on-scroll";
 
@@ -38,7 +38,7 @@ const AboutUs = ({}: AboutUsProps) => (
       </AnimationOnScroll>
 
       <AnimationOnScroll animateIn="fadeInDown">
-        <div className={styles.item}>
+        <div className={`${styles.item} ${styles.f_reverse}`}>
           <div className={styles.wrap}>
             <div className={styles.content}>
               <h2>Introducing the Vince Chain Coin (VCE).</h2>
@@ -101,7 +101,7 @@ const AboutUs = ({}: AboutUsProps) => (
       </AnimationOnScroll>
 
       <AnimationOnScroll animateIn="fadeInDown">
-        <div className={styles.item}>
+        <div className={`${styles.item} ${styles.f_reverse}`}>
           <div className={styles.wrap}>
             <div className={styles.content}>
               <h2>
@@ -131,6 +131,15 @@ const AboutUs = ({}: AboutUsProps) => (
               >
                 <button>
                   <FaTelegramPlane />
+                </button>
+              </a>
+              <a
+                target="_blank"
+                rel="noreferrer"
+                href="https://instagram.com/vincechain?utm_medium=copy_link"
+              >
+                <button>
+                  <BsInstagram />
                 </button>
               </a>
               <a
