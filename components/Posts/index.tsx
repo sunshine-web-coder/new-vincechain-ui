@@ -2,6 +2,7 @@ import { Parallax } from "react-scroll-parallax";
 import Link from "next/link";
 import cn from "classnames";
 import styles from "./Posts.module.sass";
+import styles2 from "./Posts.module.scss";
 import Card from "@/components/Card";
 import Image from "@/components/Image";
 import Icon from "@/components/Icon";
@@ -36,13 +37,13 @@ const Posts = ({ className, title, info, posts, background }: PostsProps) => (
                 <div className={styles.wrap}>
                     <div className={cn("h2", styles.title)}>{title}</div>
                     <div className={styles.info}>{info}</div>
-                    <Link href="/blog">
+                    {/* <Link href="/blog">
                         <a className={cn("button", styles.button)}>
                             <span>view all posts</span>
                         </a>
-                    </Link>
+                    </Link> */}
                 </div>
-                <div className={styles.list}>
+                <div className={styles2.list}>
                     {posts.map((item, index) => (
                         <Card
                             className={styles.card}
@@ -74,7 +75,7 @@ const Posts = ({ className, title, info, posts, background }: PostsProps) => (
                                 <div className={cn("h4", styles.subtitle)}>
                                     {item.title}
                                 </div>
-                                <div className={styles.line}>
+                                {/* <div className={styles.line}>
                                     <div className={styles.date}>
                                         {item.date}
                                     </div>
@@ -83,7 +84,7 @@ const Posts = ({ className, title, info, posts, background }: PostsProps) => (
                                         name="arrow-right"
                                         size="26"
                                     />
-                                </div>
+                                </div> */}
                             </div>
                         </Card>
                     ))}

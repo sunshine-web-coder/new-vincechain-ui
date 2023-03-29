@@ -2,47 +2,94 @@ export const details = [
     {
         image: {
             src: "/images/about-pic-1.png",
-            width: 712,
-            height: 712,
             alt: "Figure",
         },
         content: (
             <>
-                <h2>Built by developers, for developers.</h2>
+                <h2>Our Freelance marketplace beta.</h2>
                 <p>
-                    Onix delivers tamper-proof inputs, outputs, and computations
-                    to support advanced smart contracts on any blockchain.
+                The vince freelance market place released earlier is
+                powered by the Vince Token and chain.
                 </p>
-                <ul>
+                {/* <ul>
                     <li>Fully benefit from scalable network effects</li>
                     <li>Inherently more secure than all competitors</li>
                     <li>More open and powerful with 0.001% downtime</li>
-                </ul>
+                </ul> */}
             </>
         ),
+        slug1: "https://vincefreelancer.com/",
+        slugLabel1: "Sign up",
+        slugLabel2: "Read the docs",
+        slug2: ""
     },
     {
         image: {
             src: "/images/about-pic-2.png",
-            width: 712,
-            height: 682,
             alt: "Figure",
         },
         content: (
             <>
-                <h2>Top blockchains build on Onix.</h2>
+                <h2>Introducing the Vince Chain Coin (VCE).</h2>
                 <p>
-                    Onix is committed to fostering the growth of Web3
-                    applications by providing the infrastructure and security
-                    needed for Web3.
+                $VCE is the native coin of the Vince Chain Blockchain and the utility coin of the Vince Chain Ecosystem. Functions include validating transactions, staking, and governance
                 </p>
                 <p>
-                    Onix believes in Web3 for all. Onix is a decentralised
-                    blockchain scaling platform that enables developers to build
-                    scalable user-friendly dApps with low transaction fees
-                    without ever sacrificing on security.
+                What’s more? Vince Chain Coin (VCE) is interoperable with Ethereum Virtual Machine and other chains. Rewards pools and incentives on Vince Chain will be managed by $VCE.
+                </p>
+                <p>
+                    <b>Want to join Vince Chain?</b>
                 </p>
             </>
         ),
+        slug1: "",
+        slugLabel1: "Buy VCE Now",
+        slugLabel2: "Read the docs",
+        slug2: "https://vincechain.gitbook.io/vince-chain-documentation/"
+    },
+    {
+        image: {
+            src: "/images/about-pic-1.png",
+            alt: "Figure",
+        },
+        content: (
+            <>
+                <h2>Build in the Future</h2>
+                <p>
+                Vince Chain is powering the decentralized future faster than you think.
+                </p>
+                {/* <ul>
+                    <li>Fully benefit from scalable network effects</li>
+                    <li>Inherently more secure than all competitors</li>
+                    <li>More open and powerful with 0.001% downtime</li>
+                </ul> */}
+            </>
+        ),
+        // slugE1: "",
+        // slugLabelE1: "Start Building",
+        // slugLabelE2: "Read the docs",
+        // slugE2: ""
+        slug1: "/",
+        slugLabel1: "Start Building",
+        slugLabel2: "Read the docs",
+        slug2: ""
+    },
+    {
+        image: {
+            src: "/images/about-pic-2.png",
+            alt: "Figure",
+        },
+        content: (
+            <>
+                <h2>There Is a community <br />for you.</h2>
+                <p>
+                Vince Chain has a growing community of resources, contributors, users, developers, and more. Get all the support you may need in our community.
+                </p>
+            </>
+        ),
+        slug1: "",
+        slugLabel1: "Buy VCE Now",
+        slugLabel2: "Read the docs",
+        slug2: "https://vincechain.gitbook.io/vince-chain-documentation/"
     },
 ];

@@ -26,8 +26,8 @@ const HomePage = () => {
             <Solutions />
             <Posts
                 className="section"
-                title="Your gateway to everything Onix."
-                info="Stay current on the latest Onix project developments, news, and content, updated daily."
+                title="The latest updates"
+                info="Stay current on the vincechain latest updates"
                 posts={posts}
             />
             <Reviews reviews={reviews} />
