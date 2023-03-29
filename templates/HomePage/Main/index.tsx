@@ -67,7 +67,7 @@ const Main = ({ scrollToRef }: MainProps) => (
                 </div>
                 {images.map((image, index) => (
                     <Parallax
-                        className={styles.image}
+                        className={`${styles.image} ${styles2.imageHero}`}
                         speed={1}
                         easing="easeInQuad"
                         rotate={index === 2 ? [2, -10] : [-4, 15]}
