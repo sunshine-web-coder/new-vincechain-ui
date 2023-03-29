@@ -11,12 +11,11 @@ type LogoProps = {
 const Logo = ({ className, onClick }: LogoProps) => (
     <Link href="/">
         <a className={cn(styles.logo, className)} onClick={onClick}>
-            <Image
-                src="/images/logo.svg"
-                width={90}
-                height={55}
+            <img
+                src="/images/logo2.png"
                 alt="Onix"
                 priority
+                style={{width: 200}}
             />
         </a>
     </Link>
