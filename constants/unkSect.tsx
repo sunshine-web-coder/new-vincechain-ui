@@ -5,7 +5,7 @@ export const unkSect = [
             "Vince Chain is one of the fastest blockchain in the world with low transaction fees, scalable and builder friendly. Its a blockchain built for the meta verse and web 3.",
         icon: "/images/icon-1.svg",
         button: "Explorer",
-        slug: "jdjd"
+        slug: ""
     },
     {
         title: "Vince Coin",

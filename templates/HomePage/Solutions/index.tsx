@@ -19,12 +19,12 @@ const Solutions = ({}: SolutionsProps) => {
             <div className={cn("container-small", styles.container)}>
                 <div className={styles.head}>
                     <div className={cn("h2", styles.title)}>
-                        Scaling solutions, amplified.
+                        Why Build on Vince Chain
                     </div>
-                    <div className={styles.info}>
+                    {/* <div className={styles.info}>
                         Onix&apos;s complete suite of blockchain-scaling
                         solutions.
-                    </div>
+                    </div> */}
                 </div>
                 <div className={styles.list}>
                     {solutions.map((item, index) => (
@@ -49,12 +49,12 @@ const Solutions = ({}: SolutionsProps) => {
                                 {item.title}
                             </div>
                             <div className={styles.content}>{item.content}</div>
-                            <div
+                            {/* <div
                                 className={cn("status", styles.status)}
                                 style={{ color: item.color }}
                             >
                                 {item.status}
-                            </div>
+                            </div> */}
                         </Card>
                     ))}
                 </div>

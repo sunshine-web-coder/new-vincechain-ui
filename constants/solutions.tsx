@@ -1,55 +1,41 @@
 export const solutions = [
     {
-        title: "Onix Fraktal",
+        title: "Vince Chain x Cosmos",
         content:
-            "EVM-compatible block sidechain, secured by a permissionless set of PoS validators.",
+            "Application-specific functionalities, Tendermint Core, and BFT secure framework to build scalable applications.",
         icon: "/images/icon-1.svg",
-        status: "ONLINE",
         color: "#89EB5B",
     },
     {
-        title: "Onix Satchel",
+        title: "Secure and fast",
         content:
-            "Create exchanges and marketplaces that allow anyone around the world to invest.",
+            "High finality and great throughput; signature of a high-level blockchain framework",
         icon: "/images/icon-2.svg",
-        status: "ONLINE",
         color: "#89EB5B",
         delay: 200,
     },
     {
-        title: "Onix Shard",
+        title: "Low-cost transactions",
         content:
-            "Bring value to gamers by letting them take their loot to another game or into the real world.",
+            "Interact with the Vince Chain mainnet at the lowest cost possible. Less fees and faster transactions than Ethereum.",
         icon: "/images/icon-3.svg",
-        status: "ONLINE",
         color: "#89EB5B",
         delay: 400,
     },
     {
-        title: "Onix Lancer",
+        title: "Interoperable with EVM",
         content:
-            "Cryptographic proofs to connect highly accurate and available data/APIs to any smart contract.",
+            "Deploy smart contracts and transfer assets easily between Vince Chain, Ethereum, and other virtual machines (VM).",
         icon: "/images/icon-4.svg",
-        status: "DEVELOPMENT",
         color: "#EBB15B",
     },
     {
-        title: "Onix Echo",
+        title: "Reward Making Machine (RMM)",
         content:
-            "Empower your community to organize and allocate resources to its members. ",
+            "Vince Chain rewards network and liquidity contributor with the VCE token. Other reward-making protocols include staking, yield farming, decentralized remote work, etc.",
         icon: "/images/icon-5.svg",
-        status: "DEVELOPMENT",
         color: "#EBB15B",
         delay: 200,
-    },
-    {
-        title: "Onix Epoc",
-        content:
-            "Protect dApps from insolvency by auditing the reserves of tokens used as collateral.",
-        icon: "/images/icon-6.svg",
-        status: "VOTING",
-        color: "#6F5BEB",
-        delay: 400,
     },
 ];
 
