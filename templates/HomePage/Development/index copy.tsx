@@ -38,30 +38,31 @@ const Development = ({ scrollToRef }: DevelopmentProps) => {
                             animateIn="fadeInDown"
                             delay={item.delay}
                         >
-                            <div className="" style={{marginTop: 20, marginBottom: 30}}>
-                                <img
+                            <div className={styles.preview}>
+                                <Image
                                     src={item.image}
                                     layout="fill"
                                     alt="Figure"
+                                    width={20}
                                 />
                             </div>
                             <div className={cn("h3", styles.subtitle)}>
                                 {item.title}
                             </div>
                             <div className={styles.content}>{item.content}</div>
-                            <div className={styles.foot}>
+                            {/* <div className={styles.foot}>
                                 <div
                                     className={styles.more}
-                                    style={{ color: "#FFCA00" }}
+                                    style={{ color: item.color }}
                                 >
-                                    {item.label}
+                                    Learn more
                                 </div>
                                 <Icon
                                     className={styles.arrow}
                                     name="arrow-right"
                                     size="26"
                                 />
-                            </div>
+                            </div> */}
                         </Card>
                     ))}
                 </div>

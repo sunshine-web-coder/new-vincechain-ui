@@ -1,56 +1,41 @@
 export const development = [
     {
-        title: "Globally-accesible, transformational API",
+        title: "Vince Pay",
         content:
-            "Your data can be transformed, organized, and shared across applications for anyone to query with just a few keystrokes.",
-        image: "/images/development-pic-1.png",
+            "Decentralized payment service featuring crypto/fiat onramp powered by Vince Chain. Send and receive payments faster than the money services you know.",
+        image: "/images/1kk.svg",
         color: "#6F5BEB",
-        url: "/technology",
+        url: "",
     },
     {
-        title: "Resilient, automated layer security",
+        title: "Vince Freelance",
         content:
-            "Empower your blockchain security without sacrificing crucial resources and accessibility to its members.",
-        image: "/images/development-pic-2.png",
+            "A Web3 freelance marketplace to buy and sell any in-demand skills. Work remotely and get paid securely and anonymously.",
+        image: "/images/2kk.svg",
         color: "#EBB15B",
         delay: 150,
-        url: "/technology",
+        url: "https://vincefreelancer.com/",
+        label: "Join Now"
     },
     {
-        title: "Seamless connection to any API tools",
+        title: "Qroni Swap",
         content:
-            "Your data can be transformed, organized, and shared across applications for anyone to query with just a few keystrokes.",
-        image: "/images/development-pic-3.png",
+            "A robust ecosystem featuring multi-chain crypto services, including DEX, liquidity staking, NFT ticketing & trading, onramp, and yield farming.",
+        image: "/images/3kk.svg",
         color: "#89EB5B",
         delay: 300,
-        url: "/technology",
+        url: "https://qroni.org/",
+        label: "Explore Qroni Swap"
     },
     {
-        title: "Reliable, tamper-proof network",
+        title: "Blithe Wallet",
         content:
-            "Use cryptographic proofs to connect highly accurate and available data/APIs to any smart contract.",
-        image: "/images/development-pic-1.png",
+            "More than just a digital crypto wallet. Blithe Wallet offers non-custodial asset management services, plus staking, NFC payment, and crypto buy/sell services.",
+        image: "/images/4kk.svg",
         color: "#6F5BEB",
         delay: 450,
-        url: "/technology",
-    },
-    {
-        title: "Resilient, automated layer security",
-        content:
-            "Empower your blockchain security without sacrificing crucial resources and accessibility to its members.",
-        image: "/images/development-pic-2.png",
-        color: "#EBB15B",
-        delay: 600,
-        url: "/technology",
-    },
-    {
-        title: "Seamless connection to any API tools",
-        content:
-            "Your data can be transformed, organized, and shared across applications for anyone to query with just a few keystrokes.",
-        image: "/images/development-pic-3.png",
-        color: "#89EB5B",
-        delay: 750,
-        url: "/technology",
+        url: "https://www.blithewallet.com/",
+        label: "Use Wallet"
     },
 ];
 
