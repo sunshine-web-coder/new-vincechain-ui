@@ -41,7 +41,6 @@ const Development = ({ scrollToRef }: DevelopmentProps) => {
                             <div className="" style={{marginTop: 20, marginBottom: 30}}>
                                 <img
                                     src={item.image}
-                                    layout="fill"
                                     alt="Figure"
                                 />
                             </div>

@@ -13,7 +13,7 @@ const Logo = ({ className, onClick }: LogoProps) => (
         <a className={cn(styles.logo, className)} onClick={onClick}>
             <img
                 src="/images/logo2.png"
-                alt="Onix"
+                alt=""
                 style={{width: 200}}
             />
         </a>
