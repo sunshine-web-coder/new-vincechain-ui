@@ -14,7 +14,6 @@ const Logo = ({ className, onClick }: LogoProps) => (
             <img
                 src="/images/logo2.png"
                 alt="Onix"
-                priority
                 style={{width: 200}}
             />
         </a>

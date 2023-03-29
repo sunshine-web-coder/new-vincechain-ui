@@ -24,9 +24,9 @@ const Main = ({ scrollToRef }: MainProps) => (
         <div className={cn("container", styles.container)}>
             <div className={styles.head}>
                 {/* <div className={styles.stage}>INTRODUCING ONIX</div> */}
-                <div className={cn("h1", styles.title)}>
+                <div className={cn("h1", styles2.title)}>
                    Industry-Grade <br />blockchain for
-                   <span style={{color: "#FFCA00"}}>
+                   {/* <span style={{color: "#FFCA00"}}>
                     <TypeAnimation
                     sequence={[
                         'DeFi', // Types 'One'
@@ -46,7 +46,7 @@ const Main = ({ scrollToRef }: MainProps) => (
                     cursor={true}
                     repeat={Infinity}
                     />
-                   </span>
+                   </span> */}
                    
                 </div>
                 <div className={styles.info}>
