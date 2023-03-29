@@ -24,17 +24,17 @@ const JoinCommunity = ({ title }: JoinCommunityProps) => (
                     Or learn all about{" "}
                     <a
                         className={styles.social}
-                        href="/"
+                        href="https://vincechain.gitbook.io/vince-chain-documentation/"
                         target="_blank"
                         rel="noreferrer"
                     >
-                        how to build on Onix
+                        how to build on Vincechain
                     </a>
                     .
                 </div>
                 <a
                     className={cn("button", styles.button)}
-                    href="https://ui8.net/"
+                    href="https://t.me/vincechain"
                     target="_blank"
                     rel="noopener noreferrer"
                 >
