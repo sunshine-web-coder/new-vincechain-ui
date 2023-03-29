@@ -1,6 +1,7 @@
 import { Parallax } from "react-scroll-parallax";
 import cn from "classnames";
 import styles from "./Main.module.sass";
+import styles2 from "./Main.module.scss";
 import Image from "@/components/Image";
 import Scroll from "@/components/Scroll";
 import { TypeAnimation } from 'react-type-animation';
@@ -50,6 +51,9 @@ const Main = ({ scrollToRef }: MainProps) => (
                 </div>
                 <div className={styles.info}>
                     Vince is a blockchain powering the Vince Ecosystem and its products.
+                </div>
+                <div className={styles.heroLink}>
+                    <a className={cn("button", styles2.tHeroLink)} href="">Start Building</a>
                 </div>
             </div>
             <div className={styles.images}>
