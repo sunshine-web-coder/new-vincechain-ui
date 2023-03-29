@@ -3,6 +3,7 @@ import cn from "classnames";
 import styles from "./Main.module.sass";
 import Image from "@/components/Image";
 import Scroll from "@/components/Scroll";
+import { TypeAnimation } from 'react-type-animation';
 
 const images = [
     "/images/figures/figure-1.png",
@@ -21,13 +22,34 @@ const Main = ({ scrollToRef }: MainProps) => (
     <div className={cn("section", styles.section)}>
         <div className={cn("container", styles.container)}>
             <div className={styles.head}>
-                <div className={styles.stage}>INTRODUCING ONIX</div>
+                {/* <div className={styles.stage}>INTRODUCING ONIX</div> */}
                 <div className={cn("h1", styles.title)}>
-                    Community-owned API&nbsp;of blockchains.
+                   Industry-Grade <br />blockchain for
+                   <span style={{color: "#FFCA00"}}>
+                    <TypeAnimation
+                    sequence={[
+                        'DeFi', // Types 'One'
+                        1000, // Waits 1s
+                        'Remote work', // Deletes 'One' and types 'Two'
+                        2000, // Waits 2s
+                        'Gaming', // Types 'Three' without deleting 'Two'
+                        3000, // Waits 3s
+                        'web 3',
+                        4000, // Waits 4s
+                        'and More...',
+                        () => {
+                        console.log('Done typing!'); // Place optional callbacks anywhere in the array
+                        }
+                    ]}
+                    wrapper="div"
+                    cursor={true}
+                    repeat={Infinity}
+                    />
+                   </span>
+                   
                 </div>
                 <div className={styles.info}>
-                    Onix delivers tamper-proof inputs, outputs, and computations
-                    to support advanced smart contracts on any blockchain
+                    Vince is a blockchain powering the Vince Ecosystem and its products.
                 </div>
             </div>
             <div className={styles.images}>

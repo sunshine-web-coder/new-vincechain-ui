@@ -11,6 +11,7 @@ import JoinCommunity from "@/components/JoinCommunity";
 
 import { posts } from "@/mocks/posts";
 import { reviews } from "@/mocks/reviews";
+import UnkSect from "./UnkSect";
 
 const HomePage = () => {
     const scrollToRef = useRef(null);
@@ -19,6 +20,7 @@ const HomePage = () => {
         <Layout>
             <Main scrollToRef={scrollToRef} />
             <Development scrollToRef={scrollToRef} />
+            <UnkSect />
             <AboutUs />
             <Statistics />
             <Solutions />

@@ -14,7 +14,7 @@ const Logo = ({ className, onClick }: LogoProps) => (
             <Image
                 src="/images/logo.svg"
                 width={90}
-                height={24}
+                height={55}
                 alt="Onix"
                 priority
             />
