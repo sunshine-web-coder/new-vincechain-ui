@@ -17,7 +17,7 @@ const Footer = ({}: FooterProps) => (
   <footer className={styles.footer}>
     <div className={cn("container-wide", styles.container)}>
       <div className={`${styles.row} ${styles2.d_flex}`}>
-        <Logo className={styles.logo} />
+        <Logo className={`${styles.logo} ${styles2.fLogo}`} />
         <div className={`${styles.menu} ${styles2.menu2}`}>
           {footerNavigation &&
             footerNavigation.map((a, akey) => (

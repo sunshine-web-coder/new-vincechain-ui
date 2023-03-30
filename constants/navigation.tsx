@@ -4,25 +4,21 @@ export const headerNavigation = [
     url: "/",
   },
   {
-    title: "About us",
-    url: "/about-us",
-  },
-  {
     title: "Community",
     url: "https://t.me/vincechain",
     external: true,
   },
   {
-    title: "Blog",
-    url: "/blog",
+    title: "Whitepaper",
+    url: "https://vincechain.gitbook.io/vince-chain-documentation/",
   },
   {
-    title: "Technology",
+    title: "Audit",
     url: "/technology",
   },
   {
-    title: "Careers",
-    url: "/careers",
+    title: "Contact",
+    url: "mailto:support@vincechain.com",
   },
 ];
 

@@ -1,6 +1,7 @@
 .social {
   display: flex;
   gap: 20px;
+  flex-wrap: wrap;
   a {
     button {
       color: #ffffff;
@@ -32,6 +33,11 @@
   @media screen and (max-width: 1200px) {
     flex-direction: column;
     gap: 50px;
+
+    .fLogo {
+      position: relative;
+      left: -10px;
+    }
   }
   .menu2 {
     .fRLinks {
@@ -42,7 +48,7 @@
           margin-top: 10px;
           a {
             color: rgb(202, 202, 202);
-            &:hover{
+            &:hover {
               color: rgb(212, 203, 184);
             }
           }
