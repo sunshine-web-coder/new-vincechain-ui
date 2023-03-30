@@ -109,9 +109,12 @@
   }
   @media screen and (max-width: 500px) {
     .content h2 {
-      font-size: 30px;
-      line-height: 48px;
-      color: #0e0d0d9f;
+      font-size: 35px !important;
+      line-height: 38px !important;
+    }
+    .content p {
+      font-size: 20px !important;
+      line-height: 36px;
     }
   }
 }
