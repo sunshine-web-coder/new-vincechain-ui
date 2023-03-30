@@ -29,7 +29,7 @@ const Reviews = ({ reviews }: ReviewsProps) => {
         <div className={`${styles.list} ${styles2.partner_cont}`}>
           <div className={cn("h2", styles.title)}>Partners</div>
           <div className={styles2.partner_list}>
-            <Marquee gradientColor={[34,35,37]}>
+            <Marquee gradientColor={[34,35,37]} pauseOnHover={true}>
                 <div className={styles2.p_box}>
                     <img src="/images/partners/1.png" alt="" />
                 </div>
@@ -41,6 +41,12 @@ const Reviews = ({ reviews }: ReviewsProps) => {
                 </div>
                 <div className={styles2.p_box}>
                     <img src="/images/partners/4.png" alt="" />
+                </div>
+                <div className={styles2.p_box}>
+                    <img src="/images/partners/5.png" alt="" />
+                </div>
+                <div className={styles2.p_box}>
+                    <img src="/images/partners/6.png" alt="" />
                 </div>
             </Marquee>
           </div>
