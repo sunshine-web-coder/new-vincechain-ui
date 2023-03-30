@@ -6,6 +6,7 @@ import { FaTelegramPlane, FaGithub } from "react-icons/fa";
 import { AnimationOnScroll } from "react-animation-on-scroll";
 
 import { details } from "@/constants/detailsAbout";
+import { socialList } from "@/constants/social";
 
 type AboutUsProps = {};
 
@@ -115,51 +116,11 @@ const AboutUs = ({}: AboutUsProps) => (
               </p>
             </div>
             <div className={styles.social}>
-              <a
-                target="_blank"
-                rel="noreferrer"
-                href="https://twitter.com/vincechain"
-              >
-                <button>
-                  <BsTwitter />
-                </button>
-              </a>
-              <a
-                target="_blank"
-                rel="noreferrer"
-                href="https://t.me/vincechain"
-              >
-                <button>
-                  <FaTelegramPlane />
-                </button>
-              </a>
-              <a
-                target="_blank"
-                rel="noreferrer"
-                href="https://instagram.com/vincechain?utm_medium=copy_link"
-              >
-                <button>
-                  <BsInstagram />
-                </button>
-              </a>
-              <a
-                target="_blank"
-                rel="noreferrer"
-                href="https://github.com/vince-chain"
-              >
-                <button>
-                  <FaGithub />
-                </button>
-              </a>
-              <a
-                target="_blank"
-                rel="noreferrer"
-                href="https://www.youtube.com/@vincechain5256"
-              >
-                <button>
-                  <BsYoutube />
-                </button>
-              </a>
+              {socialList.map((item, i) => (
+                <a key={i} target="_blank" rel="noreferrer" href={item.slug}>
+                  <button>{item.icon}</button>
+                </a>
+              ))}
             </div>
           </div>
           <div className={styles.preview}>

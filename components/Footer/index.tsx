@@ -5,8 +5,9 @@ import styles2 from "./Footer.module.scss";
 import Logo from "@/components/Logo";
 import NavLink from "@/components/NavLink";
 import Socials from "@/components/Socials";
+import { socialList } from "../../constants/social";
 import { BsTwitter, BsYoutube, BsInstagram } from "react-icons/bs";
-import { FaTelegramPlane, FaGithub } from "react-icons/fa";
+import { FaTelegramPlane, FaGithub, FaLinkedinIn } from "react-icons/fa";
 
 import { footerNavigation, documents } from "@/constants/navigation";
 import { socials } from "@/constants/socials";
@@ -49,47 +50,15 @@ const Footer = ({}: FooterProps) => (
         </div> */}
         {/* <Socials className={styles.socials} socials={socials} /> */}
         <div className={styles2.social}>
-          <a
-            target="_blank"
-            rel="noreferrer"
-            href="https://twitter.com/vincechain"
-          >
-            <button>
-              <BsTwitter />
-            </button>
-          </a>
-          <a target="_blank" rel="noreferrer" href="https://t.me/vincechain">
-            <button>
-              <FaTelegramPlane />
-            </button>
-          </a>
-          <a
-            target="_blank"
-            rel="noreferrer"
-            href="https://instagram.com/vincechain?utm_medium=copy_link"
-          >
-            <button>
-              <BsInstagram />
-            </button>
-          </a>
-          <a
-            target="_blank"
-            rel="noreferrer"
-            href="https://github.com/vince-chain"
-          >
-            <button>
-              <FaGithub />
-            </button>
-          </a>
-          <a
-            target="_blank"
-            rel="noreferrer"
-            href="https://www.youtube.com/@vincechain5256"
-          >
-            <button>
-              <BsYoutube />
-            </button>
-          </a>
+          {socialList.map((item, i) => (
+            <a key={i}
+              target="_blank"
+              rel="noreferrer"
+              href={item.slug}
+            >
+              <button>{item.icon}</button>
+            </a>
+          ))}
         </div>
       </div>
     </div>
