@@ -3,6 +3,7 @@ import { useRef } from "react";
 import { useDraggable } from "react-use-draggable-scroll";
 import cn from "classnames";
 import styles from "./Development.module.sass";
+import styles2 from "./Development.module.scss";
 import Card from "@/components/Card";
 import Image from "@/components/Image";
 import Icon from "@/components/Icon";
@@ -26,7 +27,7 @@ const Development = ({ scrollToRef }: DevelopmentProps) => {
             ></div>
             <div className={cn("container-wide", styles.container)}>
                 <h2 className={cn("h2", styles.title)} style={{marginTop: 100}}>
-                The Vince Ewcosystem.
+                The Vince Ecosystem.
                 </h2>
                 <div className={styles.list} {...events} ref={ref}>
                     {development.map((item, index) => (
@@ -38,7 +39,7 @@ const Development = ({ scrollToRef }: DevelopmentProps) => {
                             animateIn="fadeInDown"
                             delay={item.delay}
                         >
-                            <div className="" style={{marginTop: 20, marginBottom: 30}}>
+                            <div className={styles2.d_Img} style={{marginTop: 20, marginBottom: 30}}>
                                 <img
                                     src={item.image}
                                     alt="Figure"

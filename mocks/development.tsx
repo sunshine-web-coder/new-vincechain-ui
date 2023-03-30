@@ -3,7 +3,7 @@ export const development = [
         title: "Blithe Wallet",
         content:
             "More than just a digital crypto wallet. Blithe Wallet offers non-custodial asset management services, plus staking, NFC payment, and crypto buy/sell services.",
-        image: "/images/4kk.svg",
+        image: "/images/blithe.png",
         color: "#6F5BEB",
         delay: 450,
         url: "https://www.blithewallet.com/",
@@ -13,7 +13,7 @@ export const development = [
         title: "Qroni Swap",
         content:
             "A robust ecosystem featuring multi-chain crypto services, including DEX, liquidity staking, NFT ticketing & trading, onramp, and yield farming.",
-        image: "/images/3kk.svg",
+        image: "/images/qroni.png",
         color: "#89EB5B",
         delay: 300,
         url: "https://qroni.org/",
@@ -23,7 +23,7 @@ export const development = [
         title: "Artlux",
         content:
             "A Web3 freelance marketplace to buy and sell any in-demand skills. Work remotely and get paid securely and anonymously.",
-        image: "/images/artlux.png",
+        image: "/images/artluxx.png",
         color: "#EBB15B",
         delay: 150,
         url: "https://artlux.io/",
@@ -33,7 +33,7 @@ export const development = [
         title: "Vince Pay",
         content:
             "Decentralized payment service featuring crypto/fiat onramp powered by Vince Chain. Send and receive payments faster than the money services you know.",
-        image: "/images/1kk.svg",
+        image: "/images/vince.png",
         color: "#6F5BEB",
         url: "",
     },
