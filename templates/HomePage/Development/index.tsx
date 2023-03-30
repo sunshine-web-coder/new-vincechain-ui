@@ -26,7 +26,7 @@ const Development = ({ scrollToRef }: DevelopmentProps) => {
             ></div>
             <div className={cn("container-wide", styles.container)}>
                 <h2 className={cn("h2", styles.title)} style={{marginTop: 100}}>
-                The Vince Ecosystem.
+                The Vince Ewcosystem.
                 </h2>
                 <div className={styles.list} {...events} ref={ref}>
                     {development.map((item, index) => (
