@@ -37,6 +37,14 @@ export const solutions = [
         color: "#EBB15B",
         delay: 200,
     },
+    {
+        title: "SCALABILITY",
+        content:
+            "The Vincechain Network has high throughput, efficient consensus, network sharding, dynamic block size, and low latency, promoting adoption and fast processing.",
+        icon: "/images/3d8.png",
+        color: "#EBB15B",
+        delay: 200,
+    },
 ];
 
 export const images = [

@@ -13,7 +13,7 @@ export const unkSect = [
             "",
         icon: "/images/3d2.png",
         // button: "ONLINE",
-        s: true,
+        s: "/images/vce-coin.png",
         slug: "",
         delay: 200,
     },

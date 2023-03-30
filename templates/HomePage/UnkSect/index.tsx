@@ -38,14 +38,16 @@ const UnkSect = ({}: SolutionsProps) => {
               small
             >
               <div className={`${styles.icon} ${customStyles.icon2}`}>
-                {item.s ? (
-                  <img src={item.icon} className={customStyles.img2} alt="Figure" />
-                ) : (
-                  <img src={item.icon} alt="Figure" />
-                )}
+                <img src={item.icon} alt="Figure" />
               </div>
               <div className={cn("h3", styles.subtitle)}>{item.title}</div>
-              <div className={styles.content}>{item.content}</div>
+              <div className={styles.content}>
+                {item.s ? (
+                  <img src={item.s} className={customStyles.coinImg} alt="Figure" />
+                ) : (
+                  <>{item.content}</>
+                )}
+              </div>
               <div className={customStyles.sLinkDiv}>
                 <a className={customStyles.sLink} href={item.slug}>
                   {item.button}
