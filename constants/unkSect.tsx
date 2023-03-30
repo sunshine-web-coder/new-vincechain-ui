@@ -13,6 +13,7 @@ export const unkSect = [
             "",
         icon: "/images/3d2.png",
         // button: "ONLINE",
+        s: true,
         slug: "",
         delay: 200,
     },

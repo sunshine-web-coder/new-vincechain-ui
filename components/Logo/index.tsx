@@ -1,6 +1,7 @@
 import Link from "next/link";
 import cn from "classnames";
 import styles from "./Logo.module.sass";
+import styles2 from "./Logo.module.scss";
 import Image from "@/components/Image";
 
 type LogoProps = {
@@ -14,7 +15,7 @@ const Logo = ({ className, onClick }: LogoProps) => (
             <img
                 src="/images/logo2.png"
                 alt=""
-                style={{width: 200}}
+                className={styles2.logoImg}
             />
         </a>
     </Link>

@@ -30,6 +30,12 @@
 }
 
 .d_flex {
+  .fLogo {
+    img{
+      width: 260px;
+      height: 35px;
+    }
+  }
   @media screen and (max-width: 1200px) {
     flex-direction: column;
     gap: 50px;
@@ -37,6 +43,11 @@
     .fLogo {
       position: relative;
       left: -10px;
+
+      img{
+        width: 220px;
+        height: 40px;
+      }
     }
   }
   .menu2 {

@@ -11,14 +11,14 @@ import { unkSect } from "@/constants/unkSect";
 type SolutionsProps = {};
 
 const UnkSect = ({}: SolutionsProps) => {
-    const isMobile = useMediaQuery({
-        query: "(max-width: 767px)",
-    });
+  const isMobile = useMediaQuery({
+    query: "(max-width: 767px)",
+  });
 
-    return (
-        <div className={cn("section", styles.section)}>
-            <div className={cn("container-small", styles.container)}>
-                {/* <div className={styles.head}>
+  return (
+    <div className={cn("section", styles.section)}>
+      <div className={cn("container-small", styles.container)}>
+        {/* <div className={styles.head}>
                     <div className={cn("h2", styles.title)}>
                         Scaling solutions, amplified.
                     </div>
@@ -27,35 +27,34 @@ const UnkSect = ({}: SolutionsProps) => {
                         solutions.
                     </div>
                 </div> */}
-                <div className={styles.list}>
-                    {unkSect.map((item, index) => (
-                        <Card
-                            className={styles.card}
-                            innerCardClass={styles.inner}
-                            key={index}
-                            animateIn="fadeInDown"
-                            delay={isMobile ? 0 : item.delay}
-                            small
-                        >
-                            <div className={styles.icon}>
-                                <Image
-                                    src={item.icon}
-                                    width={76}
-                                    height={60}
-                                    alt="Figure"
-                                />
-                            </div>
-                            <div className={cn("h3", styles.subtitle)}>
-                                {item.title}
-                            </div>
-                            <div className={styles.content}>{item.content}</div>
-                            <div className={customStyles.sLinkDiv}>
-                                <a className={customStyles.sLink} href={item.slug}>{item.button}</a>
-                            </div>
-                        </Card>
-                    ))}
-                </div>
-                {/* <div className={styles.images}>
+        <div className={styles.list}>
+          {unkSect.map((item, index) => (
+            <Card
+              className={styles.card}
+              innerCardClass={styles.inner}
+              key={index}
+              animateIn="fadeInDown"
+              delay={isMobile ? 0 : item.delay}
+              small
+            >
+              <div className={`${styles.icon} ${customStyles.icon2}`}>
+                {item.s ? (
+                  <img src={item.icon} className={customStyles.img2} alt="Figure" />
+                ) : (
+                  <img src={item.icon} alt="Figure" />
+                )}
+              </div>
+              <div className={cn("h3", styles.subtitle)}>{item.title}</div>
+              <div className={styles.content}>{item.content}</div>
+              <div className={customStyles.sLinkDiv}>
+                <a className={customStyles.sLink} href={item.slug}>
+                  {item.button}
+                </a>
+              </div>
+            </Card>
+          ))}
+        </div>
+        {/* <div className={styles.images}>
                     {images.map((image, index) => (
                         <Parallax
                             className={styles.image}
@@ -73,9 +72,9 @@ const UnkSect = ({}: SolutionsProps) => {
                         </Parallax>
                     ))}
                 </div> */}
-            </div>
-        </div>
-    );
+      </div>
+    </div>
+  );
 };
 
 export default UnkSect;
