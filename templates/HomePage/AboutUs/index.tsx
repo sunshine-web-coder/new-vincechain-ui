@@ -90,7 +90,7 @@ const AboutUs = ({}: AboutUsProps) => (
                 href="https://vincechain.gitbook.io/vince-chain-documentation/"
                 className={styles.document}
               >
-                <span>Learn about Vince Chain</span>
+                <span>Learn about Vince</span>
               </a>
             </div>
           </div>
