@@ -1,21 +1,13 @@
 export const development = [
     {
-        title: "Vince Pay",
+        title: "Blithe Wallet",
         content:
-            "Decentralized payment service featuring crypto/fiat onramp powered by Vince Chain. Send and receive payments faster than the money services you know.",
-        image: "/images/1kk.svg",
+            "More than just a digital crypto wallet. Blithe Wallet offers non-custodial asset management services, plus staking, NFC payment, and crypto buy/sell services.",
+        image: "/images/4kk.svg",
         color: "#6F5BEB",
-        url: "",
-    },
-    {
-        title: "Vince Freelance",
-        content:
-            "A Web3 freelance marketplace to buy and sell any in-demand skills. Work remotely and get paid securely and anonymously.",
-        image: "/images/2kk.svg",
-        color: "#EBB15B",
-        delay: 150,
-        url: "https://vincefreelancer.com/",
-        label: "Join Now"
+        delay: 450,
+        url: "https://www.blithewallet.com/",
+        label: "Use Wallet"
     },
     {
         title: "Qroni Swap",
@@ -28,14 +20,22 @@ export const development = [
         label: "Explore Qroni Swap"
     },
     {
-        title: "Blithe Wallet",
+        title: "Artlux",
         content:
-            "More than just a digital crypto wallet. Blithe Wallet offers non-custodial asset management services, plus staking, NFC payment, and crypto buy/sell services.",
-        image: "/images/4kk.svg",
+            "A Web3 freelance marketplace to buy and sell any in-demand skills. Work remotely and get paid securely and anonymously.",
+        image: "/images/artlux.png",
+        color: "#EBB15B",
+        delay: 150,
+        url: "https://artlux.io/",
+        label: "Explore Artlux"
+    },
+    {
+        title: "Vince Pay",
+        content:
+            "Decentralized payment service featuring crypto/fiat onramp powered by Vince Chain. Send and receive payments faster than the money services you know.",
+        image: "/images/1kk.svg",
         color: "#6F5BEB",
-        delay: 450,
-        url: "https://www.blithewallet.com/",
-        label: "Use Wallet"
+        url: "",
     },
 ];
 

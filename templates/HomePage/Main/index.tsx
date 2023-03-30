@@ -26,7 +26,7 @@ const Main = ({ scrollToRef }: MainProps) => (
                 {/* <div className={styles.stage}>INTRODUCING ONIX</div> */}
                 <div className={cn("h1", styles2.title)}>
                    Industry-Grade <br />blockchain for
-                   {/* <span style={{color: "#FFCA00"}}>
+                   <span style={{color: "#FFCA00"}}>
                     <TypeAnimation
                     sequence={[
                         'DeFi', // Types 'One'
@@ -37,7 +37,7 @@ const Main = ({ scrollToRef }: MainProps) => (
                         3000, // Waits 3s
                         'web 3',
                         4000, // Waits 4s
-                        'and More...',
+                        '',
                         () => {
                         console.log('Done typing!'); // Place optional callbacks anywhere in the array
                         }
@@ -46,7 +46,7 @@ const Main = ({ scrollToRef }: MainProps) => (
                     cursor={true}
                     repeat={Infinity}
                     />
-                   </span> */}
+                   </span>
                    
                 </div>
                 <div className={styles.info}>
