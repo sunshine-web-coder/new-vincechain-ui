@@ -2,6 +2,7 @@ import { Parallax } from "react-scroll-parallax";
 import { useMediaQuery } from "react-responsive";
 import cn from "classnames";
 import styles from "./Solutions.module.sass";
+import styles2 from "./Solutions.module.scss";
 import Card from "@/components/Card";
 import Image from "@/components/Image";
 
@@ -40,8 +41,8 @@ const Solutions = ({}: SolutionsProps) => {
                             <div className={styles.icon}>
                                 <Image
                                     src={item.icon}
-                                    width={32}
-                                    height={32}
+                                    width={73}
+                                    height={70}
                                     alt="Figure"
                                 />
                             </div>
@@ -61,7 +62,7 @@ const Solutions = ({}: SolutionsProps) => {
                 <div className={styles.images}>
                     {images.map((image, index) => (
                         <Parallax
-                            className={styles.image}
+                            className={`${styles.image} ${styles2.imageHero}`}
                             speed={1}
                             easing="easeInQuad"
                             rotate={index === 1 ? [2, -6] : [-4, 15]}

@@ -40,8 +40,8 @@ const UnkSect = ({}: SolutionsProps) => {
                             <div className={styles.icon}>
                                 <Image
                                     src={item.icon}
-                                    width={32}
-                                    height={32}
+                                    width={76}
+                                    height={60}
                                     alt="Figure"
                                 />
                             </div>

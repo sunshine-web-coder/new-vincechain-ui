@@ -3,14 +3,14 @@ export const solutions = [
         title: "Vince Chain x Cosmos",
         content:
             "Application-specific functionalities, Tendermint Core, and BFT secure framework to build scalable applications.",
-        icon: "/images/icon-1.svg",
+        icon: "/images/3d3.png",
         color: "#89EB5B",
     },
     {
         title: "Secure and fast",
         content:
             "High finality and great throughput; signature of a high-level blockchain framework",
-        icon: "/images/icon-2.svg",
+        icon: "/images/3d4.png",
         color: "#89EB5B",
         delay: 200,
     },
@@ -18,7 +18,7 @@ export const solutions = [
         title: "Low-cost transactions",
         content:
             "Interact with the Vince Chain mainnet at the lowest cost possible. Less fees and faster transactions than Ethereum.",
-        icon: "/images/icon-3.svg",
+        icon: "/images/3d5.png",
         color: "#89EB5B",
         delay: 400,
     },
@@ -26,14 +26,14 @@ export const solutions = [
         title: "Interoperable with EVM",
         content:
             "Deploy smart contracts and transfer assets easily between Vince Chain, Ethereum, and other virtual machines (VM).",
-        icon: "/images/icon-4.svg",
+        icon: "/images/3d7.png",
         color: "#EBB15B",
     },
     {
         title: "Reward Making Machine (RMM)",
         content:
             "Vince Chain rewards network and liquidity contributor with the VCE token. Other reward-making protocols include staking, yield farming, decentralized remote work, etc.",
-        icon: "/images/icon-5.svg",
+        icon: "/images/3d6.png",
         color: "#EBB15B",
         delay: 200,
     },
