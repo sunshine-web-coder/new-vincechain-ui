@@ -6,7 +6,9 @@
   margin-bottom: 20px;
   padding: 20px;
   border-radius: 10px;
-  box-shadow: 0px -1px 1px 1px rgba(172, 169, 13, 0.253);
+  // box-shadow: 0px -1px 1px 1px rgba(172, 169, 13, 0.253);
+  border-top: 1px solid rgba(172, 169, 13, 0.253);
+  border-bottom: 1px solid rgba(172, 169, 13, 0.253);
 
   &:nth-child(1) {
     margin-bottom: 100px;
@@ -81,6 +83,9 @@
 
   .preview {
     width: 100%;
+    border: 1px solid rgb(29, 29, 29);
+    border-radius: 10px;
+    overflow: hidden;
 
     img {
       width: 100%;

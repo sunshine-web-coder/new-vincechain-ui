@@ -63,7 +63,7 @@ const AboutUs = ({}: AboutUsProps) => (
             </div>
           </div>
           <div className={styles.preview}>
-            <img src="/images/about-pic-1.png" />
+            <img src="/images/about-pic-2.png" />
           </div>
         </div>
       </AnimationOnScroll>
@@ -95,7 +95,7 @@ const AboutUs = ({}: AboutUsProps) => (
             </div>
           </div>
           <div className={styles.preview}>
-            <img src="/images/about-pic-1.png" />
+            <img src="/images/about-pic-3.png" />
           </div>
         </div>
       </AnimationOnScroll>
@@ -163,7 +163,7 @@ const AboutUs = ({}: AboutUsProps) => (
             </div>
           </div>
           <div className={styles.preview}>
-            <img src="/images/about-pic-1.png" />
+            <img src="/images/about-pic-4.png" />
           </div>
         </div>
       </AnimationOnScroll>

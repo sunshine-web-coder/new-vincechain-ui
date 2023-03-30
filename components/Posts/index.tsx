@@ -9,6 +9,7 @@ import Icon from "@/components/Icon";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { AnimationOnScroll } from "react-animation-on-scroll";
 
 type PostsType = {
   title: string;
@@ -72,24 +73,26 @@ const Posts = ({ className, title, info, posts, background }: PostsProps) => (
                         </a>
                     </Link> */}
         </div>
-        <div className={styles2.list}>
-          <Slider {...settings}>
-            {posts.map((item, index) => (
-              <div className={styles2.blogBox} key={index}>
-                <div className={styles2.inBlogBox}>
-                  <div className={styles2.BiMG}>
-                    <img src={item.image} alt="" />
-                  </div>
-                  <div className={styles2.blog_article}>
-                    <p>{item.status}</p>
-                    <h4>{item.title}</h4>
-                    {/* <p></p> */}
+        <AnimationOnScroll animateIn="fadeInDown">
+          <div className={styles2.list}>
+            <Slider {...settings}>
+              {posts.map((item, index) => (
+                <div className={styles2.blogBox} key={index}>
+                  <div className={styles2.inBlogBox}>
+                    <div className={styles2.BiMG}>
+                      <img src={item.image} alt="" />
+                    </div>
+                    <div className={styles2.blog_article}>
+                      <p>{item.status}</p>
+                      <h4>{item.title}</h4>
+                      {/* <p></p> */}
+                    </div>
                   </div>
                 </div>
-              </div>
-            ))}
-          </Slider>
-        </div>
+              ))}
+            </Slider>
+          </div>
+        </AnimationOnScroll>
       </div>
       <Parallax
         className={styles.image}
