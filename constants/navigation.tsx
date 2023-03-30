@@ -114,12 +114,12 @@ export const footerNavigation = [
 ];
 
 export const documents = [
-  {
-    title: "Privacy policy",
-    url: "/",
-  },
-  {
-    title: "Terms of use",
-    url: "/",
-  },
+//   {
+//     title: "Privacy policy",
+//     url: "/",
+//   },
+//   {
+//     title: "Terms of use",
+//     url: "/",
+//   },
 ];

@@ -40,13 +40,13 @@ const Footer = ({}: FooterProps) => (
         <div className={styles.copyright}>
           © 2023 Vincechain. All rights reserved.
         </div>
-        <div className={styles.documents}>
+        {/* <div className={styles.documents}>
           {documents.map((document, index) => (
             <Link href={document.url} key={index}>
               <a className={styles.document}>{document.title}</a>
             </Link>
           ))}
-        </div>
+        </div> */}
         {/* <Socials className={styles.socials} socials={socials} /> */}
         <div className={styles2.social}>
           <a
