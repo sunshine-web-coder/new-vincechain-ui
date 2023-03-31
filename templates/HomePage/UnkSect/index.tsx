@@ -20,7 +20,7 @@ const UnkSect = ({}: SolutionsProps) => {
   const [copySuccess, setCopySuccess] = useState(false);
   const textAreaRef = useRef(null);
 
-  function copyToClipboard(e) {
+  function copyToClipboard() {
     textAreaRef.current.select();
     document.execCommand("copy");
     // This is just personal preference.
