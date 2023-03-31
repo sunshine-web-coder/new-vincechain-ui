@@ -24,7 +24,7 @@ const JoinCommunity = ({ title }: JoinCommunityProps) => (
                     Or learn all about{" "}
                     <a
                         className={styles.social}
-                        href="https://vincechain.gitbook.io/vince-chain-documentation/"
+                        href="https://vincechain.gitbook.io/vince-chain-documentation/2.-vince-chain-x-developers"
                         target="_blank"
                         rel="noreferrer"
                     >
