@@ -29,24 +29,24 @@ const Reviews = ({ reviews }: ReviewsProps) => {
         <div className={`${styles.list} ${styles2.partner_cont}`}>
           <div className={cn("h2", styles.title)}>Partners</div>
           <div className={styles2.partner_list}>
-            <Marquee gradientColor={[34,35,37]} pauseOnHover={true} speed={60}>
+            <Marquee gradientColor={[34,35,37]} pauseOnHover={true} speed={50}>
                 <div className={styles2.p_box}>
-                    <img src="/images/partners/1.png" alt="" />
+                    <Image src="/images/partners/1.png" width={450} height={150} alt="" />
                 </div>
                 <div className={styles2.p_box}>
-                    <img src="/images/partners/2.png" alt="" />
+                    <Image src="/images/partners/2.png" width={450} height={150} alt="" />
                 </div>
                 <div className={styles2.p_box}>
-                    <img src="/images/partners/3.png" alt="" />
+                    <Image src="/images/partners/3.png" width={450} height={150} alt="" />
                 </div>
                 <div className={styles2.p_box}>
-                    <img src="/images/partners/4.png" alt="" />
+                    <Image src="/images/partners/4.png" width={450} height={150} alt="" />
                 </div>
                 <div className={styles2.p_box}>
-                    <img src="/images/partners/5.png" alt="" />
+                    <Image src="/images/partners/5.png" width={450} height={150} alt="" />
                 </div>
                 <div className={styles2.p_box}>
-                    <img src="/images/partners/6.png" alt="" />
+                    <Image src="/images/partners/6.png" width={450} height={150} alt="" />
                 </div>
             </Marquee>
           </div>
