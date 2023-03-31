@@ -94,7 +94,7 @@ const UnkSect = ({}: SolutionsProps) => {
                     <div style={{ marginBottom: 40 }}>
                         <div className={customStyles.jd8s768} onClick={copyToClipboard1}>
                             Chain Name : Vince Chain 
-                            <textarea ref={textAreaRef1} value="Chain Name : Vince Chain"/>
+                            <textarea ref={textAreaRef1} value="Vince Chain"/>
                             <img onClick={() => {copyToClipboard1();copySuccessToggle();}} src="/images/copy.png" alt="" />
                         </div>
                         <div className={customStyles.jd8s768}>
@@ -104,17 +104,17 @@ const UnkSect = ({}: SolutionsProps) => {
                         </div>
                         <div className={customStyles.jd8s768}>
                             Chain ID : 1000
-                            <textarea ref={textAreaRef3} value="Chain ID : 1000"/>
+                            <textarea ref={textAreaRef3} value="1000"/>
                             <img onClick={() => {copyToClipboard3();copySuccessToggle();}} src="/images/copy.png" alt="" />
                         </div>
                         <div className={customStyles.jd8s768}>
                             Token : VCE
-                            <textarea ref={textAreaRef4} value="Token : VCE"/>
+                            <textarea ref={textAreaRef4} value="VCE"/>
                             <img onClick={() => {copyToClipboard4();copySuccessToggle();}} src="/images/copy.png" alt="" />
                         </div>
                         <div className={customStyles.jd8s768}>
                             Explorer Address : https://vincescan.com/
-                            <textarea ref={textAreaRef5} value="Explorer Address : https://vincescan.com/"/>
+                            <textarea ref={textAreaRef5} value="https://vincescan.com/"/>
                             <img className={customStyles.lC8copyImg} onClick={() => {copyToClipboard5();copySuccessToggle();}} src="/images/copy.png" alt="" />
                         </div>
                     </div>
