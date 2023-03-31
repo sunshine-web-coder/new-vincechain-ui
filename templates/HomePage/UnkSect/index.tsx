@@ -21,11 +21,9 @@ const UnkSect = ({}: SolutionsProps) => {
   const textAreaRef = useRef(null);
 
   function copyToClipboard() {
-    
-    if (textAreaRef.current != null) {
-        // 👉️ TypeScript knows that ref is not null here
-        textAreaRef.current.select();
-      }
+    if (textAreaRef.current !== null) {
+      (textAreaRef.current as HTMLTextAreaElement).select();
+    }
     document.execCommand("copy");
     // This is just personal preference.
     // I prefer to not show the whole text area selected.
@@ -78,7 +76,16 @@ const UnkSect = ({}: SolutionsProps) => {
                       className={customStyles.copyToClipboardBox}
                       onClick={copyToClipboard}
                     >
-                      <textarea ref={textAreaRef} value="Some text to copy" />
+                      <textarea
+                        ref={textAreaRef}
+                        value="
+                      Chain Name : Vince Chain
+                      RPC URL : https://rpc.vincescan.com/
+                      Chain ID : 1000
+                      Token : VCE
+                      Explorer Address : https://vincescan.com/
+                      "
+                      />
                       <button
                         onClick={() => {
                           copyToClipboard();
