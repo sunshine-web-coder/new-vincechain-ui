@@ -99,7 +99,7 @@ const UnkSect = ({}: SolutionsProps) => {
                         </div>
                         <div className={customStyles.jd8s768}>
                             RPC URL : https://rpc.vincescan.com/
-                            <textarea ref={textAreaRef2} value="RPC URL : https://rpc.vincescan.com/"/>
+                            <textarea ref={textAreaRef2} value="https://rpc.vincescan.com/"/>
                             <img onClick={() => {copyToClipboard2();copySuccessToggle();}} src="/images/copy.png" alt="" />
                         </div>
                         <div className={customStyles.jd8s768}>
