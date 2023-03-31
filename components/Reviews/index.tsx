@@ -31,22 +31,22 @@ const Reviews = ({ reviews }: ReviewsProps) => {
           <div className={styles2.partner_list}>
             <Marquee gradientColor={[34,35,37]} pauseOnHover={true} speed={60}>
                 <div className={styles2.p_box}>
-                    <img src="/images/partners/1.png" alt="" />
+                    <img src="/images/partners/dappradar.svg" alt="" />
                 </div>
                 <div className={styles2.p_box}>
-                    <img src="/images/partners/2.png" alt="" />
+                    <img src="/images/partners/digitaljournal.svg" alt="" />
                 </div>
                 <div className={styles2.p_box}>
-                    <img src="/images/partners/3.png" alt="" />
+                    <img src="/images/partners/magiccapital.svg" alt="" />
                 </div>
                 <div className={styles2.p_box}>
-                    <img src="/images/partners/4.png" alt="" />
+                    <img src="/images/partners/onramper.svg" alt="" />
                 </div>
                 <div className={styles2.p_box}>
-                    <img src="/images/partners/5.png" alt="" />
+                    <img src="/images/partners/sgncapital.svg" alt="" />
                 </div>
                 <div className={styles2.p_box}>
-                    <img src="/images/partners/6.png" alt="" />
+                    <img src="/images/partners/yahoofinance.svg" alt="" />
                 </div>
             </Marquee>
           </div>
