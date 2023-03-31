@@ -17,46 +17,40 @@ class MyDocument extends Document {
             <Html>
                 <Head>
                     <meta
-                        content="Epic landing page UI Design Kit for Blockchain, Crypto"
-                        name="Onix Blockchain Landing Page UI Design Kit"
+                        content="Vince is a blockchain powering the Vince Ecosystem and its products."
+                        name="Vince is a blockchain powering the Vince Ecosystem and its products."
                     />
                     <meta
-                        content="Onix Blockchain Landing Page UI Design Kit"
+                        content="Vince is a blockchain powering the Vince Ecosystem and its products."
                         property="og:title"
                     />
                     <meta
-                        content="Epic landing page UI Design Kit for Blockchain, Crypto"
+                        content="Vince is a blockchain powering the Vince Ecosystem and its products."
                         property="og:description"
                     />
-                    <meta
-                        content="%PUBLIC_URL%/fb-og-image.png"
-                        property="og:image"
-                    />
+
                     <meta
                         property="og:url"
-                        content="https://ui8.net/ui8/products/onix-blockchain-landing-page-ui-design-kit"
+                        content="https://vincechain.com"
                     />
                     <meta
-                        property="og:site_name"
-                        content="Onix Blockchain Landing Page UI Design Kit"
+                        property="og:vincechain"
+                        content="Vince is a blockchain powering the Vince Ecosystem and its products."
                     />
-                    <meta
-                        content="Onix Blockchain Landing Page UI Design Kit"
+                    {/* <meta
+                        content="Vince is a blockchain powering the Vince Ecosystem and its products."
                         property="twitter:title"
-                    />
-                    <meta
-                        content="Epic landing page UI Design Kit for Blockchain, Crypto"
+                    /> */}
+                    {/* <meta
+                        content="Vince is a blockchain powering the Vince Ecosystem and its products."
                         property="twitter:description"
-                    />
-                    <meta
+                    /> */}
+                    {/* <meta
                         content="%PUBLIC_URL%/twitter-card.png"
                         property="twitter:image"
-                    />
-                    <meta property="og:type" content="Article" />
-                    <meta content="summary" name="twitter:card" />
-                    <meta name="twitter:site" content="@ui8" />
-                    <meta name="twitter:creator" content="@ui8" />
-                    <meta property="fb:admins" content="132951670226590" />
+                    /> */}
+                    {/* <meta property="og:type" content="Article" /> */}
+                    <meta name="twitter:site" content="@vincechain" />
                     <meta
                         name="viewport"
                         content="width=device-width, initial-scale=1"
