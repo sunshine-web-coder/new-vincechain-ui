@@ -18,10 +18,10 @@ export const socialList = [
         icon: <FaLinkedinIn />,
         slug: "http://www.linkedin.com/company/vince-chain",
     },
-    {
-        icon: <FaGithub />,
-        slug: "https://github.com/vince-chain",
-    },
+    // {
+    //     icon: <FaGithub />,
+    //     slug: "https://github.com/vince-chain",
+    // },
     {
         icon: <BsYoutube />,
         slug: "https://www.youtube.com/@vincechain5256",
