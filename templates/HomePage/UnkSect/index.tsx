@@ -91,7 +91,7 @@ const UnkSect = ({}: SolutionsProps) => {
               <div className={styles.content}>
                 {item.s ? (
                     <>
-                    <div style={{ marginBottom: 40 }}>
+                    <div style={{ marginBottom: 37 }}>
                         <div className={customStyles.jd8s768} onClick={copyToClipboard1}>
                             Chain Name : Vince Chain 
                             <textarea ref={textAreaRef1} value="Vince Chain"/>
@@ -107,11 +107,11 @@ const UnkSect = ({}: SolutionsProps) => {
                             <textarea ref={textAreaRef3} value="1000"/>
                             <img onClick={() => {copyToClipboard3();copySuccessToggle();}} src="/images/copy.png" alt="" />
                         </div>
-                        <div className={customStyles.jd8s768}>
+                        {/* <div className={customStyles.jd8s768}>
                             Token : VCE
                             <textarea ref={textAreaRef4} value="VCE"/>
                             <img onClick={() => {copyToClipboard4();copySuccessToggle();}} src="/images/copy.png" alt="" />
-                        </div>
+                        </div> */}
                         <div className={customStyles.jd8s768}>
                             Explorer Address : https://vincescan.com/
                             <textarea ref={textAreaRef5} value="https://vincescan.com/"/>
