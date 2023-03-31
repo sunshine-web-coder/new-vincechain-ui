@@ -86,3 +86,61 @@
     transform: translateY(-15px);
   }
 }
+
+.copyToClipboardBox {
+  display: flex;
+  button {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: #ffca00;
+    font-size: 15px;
+    position: relative;
+    top: 10px;
+    .copyIcon {
+      font-size: 20px;
+    }
+  }
+  textarea {
+    height: 0px;
+    width: 0px;
+    opacity: 0;
+    padding: 0;
+  }
+  span {
+    position: relative;
+    top: 11px;
+    margin-left: 20px;
+    background-color: black;
+    color: #fff;
+    padding: 10px;
+    padding-bottom: 3px;
+    padding-top: 3px;
+
+    &:after {
+      content: " ";
+      position: absolute;
+      left: -15px;
+      top: 2px;
+      border-top: 15px solid transparent;
+      border-right: 15px solid #ffca00;
+      border-left: none;
+      border-bottom: 15px solid transparent;
+    }
+
+    @media screen and (max-width: 370px) {
+      font-size: 12px;
+      &:after {
+        content: " ";
+        position: absolute;
+        left: -10px;
+        top: 2px;
+        border-top: 10px solid transparent;
+        border-right: 10px solid #ffca00;
+        border-left: none;
+        border-bottom: 10px solid transparent;
+      }
+  
+    }
+  }
+}

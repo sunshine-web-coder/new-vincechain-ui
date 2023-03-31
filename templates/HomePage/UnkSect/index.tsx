@@ -1,3 +1,4 @@
+import React, { useEffect, useRef, useState } from "react";
 import { Parallax } from "react-scroll-parallax";
 import { useMediaQuery } from "react-responsive";
 import cn from "classnames";
@@ -5,6 +6,7 @@ import styles from "./UnkSect.module.sass";
 import customStyles from "./CustomUnkSect.module.scss";
 import Card from "@/components/Card";
 import Image from "@/components/Image";
+import { IoCopy } from "react-icons/io5";
 
 import { unkSect } from "@/constants/unkSect";
 
@@ -14,6 +16,25 @@ const UnkSect = ({}: SolutionsProps) => {
   const isMobile = useMediaQuery({
     query: "(max-width: 767px)",
   });
+
+  const [copySuccess, setCopySuccess] = useState(false);
+  const textAreaRef = useRef(null);
+
+  function copyToClipboard(e) {
+    textAreaRef.current.select();
+    document.execCommand("copy");
+    // This is just personal preference.
+    // I prefer to not show the whole text area selected.
+    // e.target.focus();
+  }
+
+  const copySuccessToggle = () => {
+    setCopySuccess(true);
+  };
+
+  setTimeout(() => {
+    setCopySuccess(false);
+  }, 2000);
 
   return (
     <div className={cn("section", styles.section)}>
@@ -43,9 +64,31 @@ const UnkSect = ({}: SolutionsProps) => {
               <div className={cn("h3", styles.subtitle)}>{item.title}</div>
               <div className={styles.content}>
                 {item.s ? (
-                  <img src={item.s} className={customStyles.coinImg} alt="Figure" />
+                  <div style={{ marginBottom: 40 }}>
+                    Chain Name : Vince Chain <br />
+                    RPC URL : https://rpc.vincescan.com/ <br />
+                    Chain ID : 1000 <br />
+                    Token : VCE <br />
+                    Explorer Address : https://vincescan.com/ <br />
+                    <div
+                      className={customStyles.copyToClipboardBox}
+                      onClick={copyToClipboard}
+                    >
+                      <textarea ref={textAreaRef} value="Some text to copy" />
+                      <button
+                        onClick={() => {
+                          copyToClipboard();
+                          copySuccessToggle();
+                        }}
+                      >
+                        <IoCopy className={customStyles.copyIcon} />
+                        Copy
+                      </button>
+                      {copySuccess ? <span>Copied to clipboard!</span> : null}
+                    </div>
+                  </div>
                 ) : (
-                  <>{item.content}</>
+                  <div style={{ marginBottom: 25 }}>{item.content}</div>
                 )}
               </div>
               <div className={customStyles.sLinkDiv}>

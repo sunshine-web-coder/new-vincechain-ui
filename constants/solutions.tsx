@@ -38,7 +38,7 @@ export const solutions = [
         delay: 200,
     },
     {
-        title: "SCALABILITY",
+        title: "Scalability",
         content:
             "The Vincechain Network has high throughput, efficient consensus, network sharding, dynamic block size, and low latency, promoting adoption and fast processing.",
         icon: "/images/3d8.png",
