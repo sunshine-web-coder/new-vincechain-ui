@@ -12,7 +12,7 @@ export const unkSect = [
         content:
             "",
         icon: "/images/3d2.png",
-        button: "Link to add wallet button",
+        button: "Add Wallet",
         s: "/images/vce-coin.png",
         slug: "https://vincechain.gitbook.io/vince-chain-documentation/vince-chain-x-users/connecting-wallet",
         delay: 200,

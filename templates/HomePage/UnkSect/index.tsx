@@ -6,7 +6,7 @@ import styles from "./UnkSect.module.sass";
 import customStyles from "./CustomUnkSect.module.scss";
 import Card from "@/components/Card";
 import Image from "@/components/Image";
-import { IoCopy } from "react-icons/io5";
+import { BsCheckCircle } from "react-icons/bs";
 
 import { unkSect } from "@/constants/unkSect";
 
@@ -18,22 +18,46 @@ const UnkSect = ({}: SolutionsProps) => {
   });
 
   const [copySuccess, setCopySuccess] = useState(false);
-  const textAreaRef = useRef(null);
+  const textAreaRef1 = useRef(null);
+  const textAreaRef2 = useRef(null);
+  const textAreaRef3 = useRef(null);
+  const textAreaRef4 = useRef(null);
+  const textAreaRef5 = useRef(null);
 
-  function copyToClipboard() {
-    if (textAreaRef.current !== null) {
-      (textAreaRef.current as HTMLTextAreaElement).select();
+  function copyToClipboard1() {
+    if (textAreaRef1.current !== null) {
+      (textAreaRef1.current as HTMLTextAreaElement).select();
     }
     document.execCommand("copy");
-    // This is just personal preference.
-    // I prefer to not show the whole text area selected.
-    // e.target.focus();
+  }
+  function copyToClipboard2() {
+    if (textAreaRef2.current !== null) {
+      (textAreaRef2.current as HTMLTextAreaElement).select();
+    }
+    document.execCommand("copy");
+  }
+  function copyToClipboard3() {
+    if (textAreaRef3.current !== null) {
+      (textAreaRef3.current as HTMLTextAreaElement).select();
+    }
+    document.execCommand("copy");
+  }
+  function copyToClipboard4() {
+    if (textAreaRef4.current !== null) {
+      (textAreaRef4.current as HTMLTextAreaElement).select();
+    }
+    document.execCommand("copy");
+  }
+  function copyToClipboard5() {
+    if (textAreaRef5.current !== null) {
+      (textAreaRef5.current as HTMLTextAreaElement).select();
+    }
+    document.execCommand("copy");
   }
 
   const copySuccessToggle = () => {
     setCopySuccess(true);
   };
-
   setTimeout(() => {
     setCopySuccess(false);
   }, 2000);
@@ -66,38 +90,36 @@ const UnkSect = ({}: SolutionsProps) => {
               <div className={cn("h3", styles.subtitle)}>{item.title}</div>
               <div className={styles.content}>
                 {item.s ? (
-                  <div style={{ marginBottom: 40 }}>
-                    Chain Name : Vince Chain <br />
-                    RPC URL : https://rpc.vincescan.com/ <br />
-                    Chain ID : 1000 <br />
-                    Token : VCE <br />
-                    Explorer Address : https://vincescan.com/ <br />
-                    <div
-                      className={customStyles.copyToClipboardBox}
-                      onClick={copyToClipboard}
-                    >
-                      <textarea
-                        ref={textAreaRef}
-                        value="
-                      Chain Name : Vince Chain
-                      RPC URL : https://rpc.vincescan.com/
-                      Chain ID : 1000
-                      Token : VCE
-                      Explorer Address : https://vincescan.com/
-                      "
-                      />
-                      <button
-                        onClick={() => {
-                          copyToClipboard();
-                          copySuccessToggle();
-                        }}
-                      >
-                        <IoCopy className={customStyles.copyIcon} />
-                        Copy
-                      </button>
-                      {copySuccess ? <span>Copied to clipboard!</span> : null}
+                    <>
+                    <div style={{ marginBottom: 40 }}>
+                        <div className={customStyles.jd8s768} onClick={copyToClipboard1}>
+                            Chain Name : Vince Chain 
+                            <textarea ref={textAreaRef1} value="Chain Name : Vince Chain"/>
+                            <img onClick={() => {copyToClipboard1();copySuccessToggle();}} src="/images/copy.png" alt="" />
+                        </div>
+                        <div className={customStyles.jd8s768}>
+                            RPC URL : https://rpc.vincescan.com/
+                            <textarea ref={textAreaRef2} value="RPC URL : https://rpc.vincescan.com/"/>
+                            <img onClick={() => {copyToClipboard2();copySuccessToggle();}} src="/images/copy.png" alt="" />
+                        </div>
+                        <div className={customStyles.jd8s768}>
+                            Chain ID : 1000
+                            <textarea ref={textAreaRef3} value="Chain ID : 1000"/>
+                            <img onClick={() => {copyToClipboard3();copySuccessToggle();}} src="/images/copy.png" alt="" />
+                        </div>
+                        <div className={customStyles.jd8s768}>
+                            Token : VCE
+                            <textarea ref={textAreaRef4} value="Token : VCE"/>
+                            <img onClick={() => {copyToClipboard4();copySuccessToggle();}} src="/images/copy.png" alt="" />
+                        </div>
+                        <div className={customStyles.jd8s768}>
+                            Explorer Address : https://vincescan.com/
+                            <textarea ref={textAreaRef5} value="Explorer Address : https://vincescan.com/"/>
+                            <img className={customStyles.lC8copyImg} onClick={() => {copyToClipboard5();copySuccessToggle();}} src="/images/copy.png" alt="" />
+                        </div>
                     </div>
-                  </div>
+                    </>
+                  
                 ) : (
                   <div style={{ marginBottom: 25 }}>{item.content}</div>
                 )}
@@ -110,6 +132,7 @@ const UnkSect = ({}: SolutionsProps) => {
             </Card>
           ))}
         </div>
+        
         {/* <div className={styles.images}>
                     {images.map((image, index) => (
                         <Parallax
@@ -129,6 +152,7 @@ const UnkSect = ({}: SolutionsProps) => {
                     ))}
                 </div> */}
       </div>
+      {copySuccess ? <div className={customStyles.copyAlert}><BsCheckCircle />Copied to clipboard!</div> : null}
     </div>
   );
 };
