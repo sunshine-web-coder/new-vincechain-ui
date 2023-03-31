@@ -14,7 +14,7 @@ export const headerNavigation = [
   },
   {
     title: "Audit",
-    url: "/technology",
+    url: "https://github.com/expelee-co/Smart-Contract-Audit/tree/main/Vince%20Audit%20Details",
   },
   {
     title: "Contact",
