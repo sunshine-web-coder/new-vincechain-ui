@@ -21,7 +21,11 @@ const UnkSect = ({}: SolutionsProps) => {
   const textAreaRef = useRef(null);
 
   function copyToClipboard() {
-    textAreaRef.current.select();
+    
+    if (textAreaRef.current != null) {
+        // 👉️ TypeScript knows that ref is not null here
+        textAreaRef.current.select();
+      }
     document.execCommand("copy");
     // This is just personal preference.
     // I prefer to not show the whole text area selected.
