@@ -22,7 +22,7 @@ export const development = [
     {
         title: "Artlux",
         content:
-            "A Web3 freelance marketplace to buy and sell any in-demand skills. Work remotely and get paid securely and anonymously.",
+            "Create, Sell And Collect Rare Digital Arts On Artlux NFT Marketplace. Play And Earn With Your NFTs On The Artlux NFT Lottery Platform.",
         image: "/images/artluxx.png",
         color: "#EBB15B",
         delay: 150,
