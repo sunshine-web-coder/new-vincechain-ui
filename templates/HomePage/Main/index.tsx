@@ -25,7 +25,7 @@ const Main = ({ scrollToRef }: MainProps) => (
             <div className={styles.head}>
                 {/* <div className={styles.stage}>INTRODUCING ONIX</div> */}
                 <div className={cn("h1", styles2.title)}>
-                   Industry-Grade <br />blockchain for
+                    EVM-Compatible & Cross-Chain Blockchain for
                    <span style={{color: "#FFCA00"}}>
                     <TypeAnimation
                     sequence={[
@@ -50,10 +50,10 @@ const Main = ({ scrollToRef }: MainProps) => (
                    
                 </div>
                 <div className={styles.info}>
-                    Vince is a blockchain powering the Vince Ecosystem and its products.
+                    Build and foster your decentralized applications and smart contracts with easy-to-use developer tools.
                 </div>
                 <div className={styles.heroLink}>
-                    <a className={cn("button", styles2.tHeroLink)} href="">Start Building</a>
+                    <a className={cn("button", styles2.tHeroLink)} href="https://vincechain.gitbook.io/vince-chain-documentation/">Start Building</a>
                 </div>
             </div>
             <div className={styles.images}>

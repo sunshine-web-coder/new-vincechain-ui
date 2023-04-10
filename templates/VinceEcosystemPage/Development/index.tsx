@@ -20,27 +20,11 @@ const Development = ({ scrollToRef }: DevelopmentProps) => {
     const { events } = useDraggable(ref);
 
     return (
-        <div className={cn("section", styles.section)}>
-            <div
-                className={cn("anchor", styles.anchor)}
-                ref={scrollToRef}
-            ></div>
+        <div className={cn("section", styles.section)} style={{marginTop: 150}}>
             <div className={cn("container-wide", styles.container)}>
                 <h2 className={cn("h2", styles.title)}>
                 The Vince Ecosystem.
                 </h2>
-            {/* <div className={styles2.inner_vince_ecosystem}>
-                <div className={styles2.left}>
-                    <h3>Discover DApps in Our Expanding Ecosystem</h3>
-                    <p>Find the top dev tools, applications, services, NFTs, & programs powered by Vince Chain.</p>
-                    <div className={styles.heroLink}>
-                        <a className={cn("button", styles2.tHeroLink)} href="">View Ecosystem</a>
-                    </div>
-                </div>
-                <div className={styles2.right}>
-                    
-                </div>
-            </div> */}
                 <div className={styles.list} {...events} ref={ref}>
                     {development.map((item, index) => (
                         <Card

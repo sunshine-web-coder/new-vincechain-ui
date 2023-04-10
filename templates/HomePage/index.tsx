@@ -19,19 +19,19 @@ const HomePage = () => {
     return (
         <Layout>
             <Main scrollToRef={scrollToRef} />
+            <Solutions />
             <Development scrollToRef={scrollToRef} />
-            <UnkSect />
+            {/* <UnkSect /> */}
             <AboutUs />
             <Statistics />
-            <Solutions />
             <Posts
                 className="section"
-                title="The latest updates"
-                info="Stay current on the vincechain latest updates"
+                title="Stay Connected"
+                info="Be in the loop with the latest news and update from the development team & community."
                 posts={posts}
             />
-            <Reviews reviews={reviews} />
-            <JoinCommunity title="Want to get involved?" />
+            {/* <Reviews reviews={reviews} /> */}
+            {/* <JoinCommunity title="Want to get involved?" /> */}
         </Layout>
     );
 };

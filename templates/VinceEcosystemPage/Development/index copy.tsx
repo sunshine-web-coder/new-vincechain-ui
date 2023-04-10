@@ -3,7 +3,6 @@ import { useRef } from "react";
 import { useDraggable } from "react-use-draggable-scroll";
 import cn from "classnames";
 import styles from "./Development.module.sass";
-import styles2 from "./Development.module.scss";
 import Card from "@/components/Card";
 import Image from "@/components/Image";
 import Icon from "@/components/Icon";
@@ -26,21 +25,9 @@ const Development = ({ scrollToRef }: DevelopmentProps) => {
                 ref={scrollToRef}
             ></div>
             <div className={cn("container-wide", styles.container)}>
-                <h2 className={cn("h2", styles.title)}>
-                The Vince Ecosystem.
+                <h2 className={cn("h2", styles.title)} style={{marginTop: 100}}>
+                The vince ecosystem.
                 </h2>
-            {/* <div className={styles2.inner_vince_ecosystem}>
-                <div className={styles2.left}>
-                    <h3>Discover DApps in Our Expanding Ecosystem</h3>
-                    <p>Find the top dev tools, applications, services, NFTs, & programs powered by Vince Chain.</p>
-                    <div className={styles.heroLink}>
-                        <a className={cn("button", styles2.tHeroLink)} href="">View Ecosystem</a>
-                    </div>
-                </div>
-                <div className={styles2.right}>
-                    
-                </div>
-            </div> */}
                 <div className={styles.list} {...events} ref={ref}>
                     {development.map((item, index) => (
                         <Card
@@ -51,29 +38,31 @@ const Development = ({ scrollToRef }: DevelopmentProps) => {
                             animateIn="fadeInDown"
                             delay={item.delay}
                         >
-                            <div className={styles2.d_Img} style={{marginTop: 20, marginBottom: 30}}>
-                                <img
+                            <div className={styles.preview}>
+                                <Image
                                     src={item.image}
+                                    layout="fill"
                                     alt="Figure"
+                                    width={20}
                                 />
                             </div>
                             <div className={cn("h3", styles.subtitle)}>
                                 {item.title}
                             </div>
                             <div className={styles.content}>{item.content}</div>
-                            <div className={styles.foot}>
+                            {/* <div className={styles.foot}>
                                 <div
                                     className={styles.more}
-                                    style={{ color: "#FFCA00" }}
+                                    style={{ color: item.color }}
                                 >
-                                    {item.label}
+                                    Learn more
                                 </div>
                                 <Icon
                                     className={styles.arrow}
                                     name="arrow-right"
                                     size="26"
                                 />
-                            </div>
+                            </div> */}
                         </Card>
                     ))}
                 </div>

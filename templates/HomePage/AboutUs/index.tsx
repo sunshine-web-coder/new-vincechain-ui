@@ -17,10 +17,9 @@ const AboutUs = ({}: AboutUsProps) => (
         <div className={styles.item}>
           <div className={styles.wrap}>
             <div className={styles.content}>
-              <h2>Our Freelance marketplace beta.</h2>
+              <h2>Freelance Marketplace <sup>beta.</sup></h2>
               <p>
-                The vince freelance market place released earlier is powered by
-                the Vince Token and chain.
+              Remote Work just got better with Vince Chain–backed marketplace. 
               </p>
             </div>
             <div className={styles.line}>
@@ -28,7 +27,7 @@ const AboutUs = ({}: AboutUsProps) => (
                 href="https://vincefreelancer.com/"
                 className={cn("button", styles.button)}
               >
-                <span>Sign up</span>
+                <span>Learn more</span>
               </a>
             </div>
           </div>
@@ -42,24 +41,17 @@ const AboutUs = ({}: AboutUsProps) => (
         <div className={`${styles.item} ${styles.f_reverse}`}>
           <div className={styles.wrap}>
             <div className={styles.content}>
-              <h2>Introducing the Vince Chain Coin (VCE).</h2>
+              <h2>Introducing Vince Chain Coin (VCE)</h2>
               <p>
-                $VCE is the native coin of the Vince Chain Blockchain and the
-                utility coin of the Vince Chain Ecosystem. Functions include
-                validating transactions, staking, and governance
-              </p>
-              <p>
-                What’s more? Vince Chain Coin (VCE) is interoperable with
-                Ethereum Virtual Machine and other chains. Rewards pools and
-                incentives on Vince Chain will be managed by $VCE.
-              </p>
-              <p>
-                <b>Want to join Vince Chain?</b>
+              Explore Vince Chain with its unique coin, $VCE. Build your dApp, scale your services, and process transactions exclusively on Vince Chain using $VCE.
               </p>
             </div>
             <div className={styles.line}>
+              <a href="" className={cn("button", styles.button)} style={{marginRight: 15}}>
+                <span>Learn more</span>
+              </a>
               <a href="" className={cn("button", styles.button)}>
-                <span>Buy VCE Now</span>
+                <span>Buy VCE</span>
               </a>
             </div>
           </div>
@@ -73,26 +65,25 @@ const AboutUs = ({}: AboutUsProps) => (
         <div className={styles.item}>
           <div className={styles.wrap}>
             <div className={styles.content}>
-              <h2>Build in the Future</h2>
+              <h2>Ready to Build a Decentralized Internet?</h2>
               <p>
-                Vince Chain is powering the decentralized future faster than you
-                think.
+              Vince Chain is everything you need and more to build and shape a decentralized future of internet.
               </p>
             </div>
             <div className={styles.line}>
               <a
-                href=""
+                href="https://vincechain.gitbook.io/vince-chain-documentation/"
                 className={cn("button", styles.button)}
                 style={{ marginRight: 20 }}
               >
-                <span>Start Building</span>
+                <span>Get Started</span>
               </a>
-              <a
+              {/* <a
                 href="https://vincechain.gitbook.io/vince-chain-documentation/"
                 className={styles.document}
               >
                 <span>Learn about Vince</span>
-              </a>
+              </a> */}
             </div>
           </div>
           <div className={styles.preview}>
@@ -106,13 +97,11 @@ const AboutUs = ({}: AboutUsProps) => (
           <div className={styles.wrap}>
             <div className={styles.content}>
               <h2>
-                There Is a community <br />
+                There is a community <br />
                 for you.
               </h2>
               <p>
-                Vince Chain has a growing community of resources, contributors,
-                users, developers, and more. Get all the support you may need in
-                our community.
+                Connect, learn more, and contribute to the future of Vince Chain through the community. 
               </p>
             </div>
             <div className={styles.social}>
