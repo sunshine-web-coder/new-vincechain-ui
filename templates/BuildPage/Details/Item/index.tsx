@@ -1,5 +1,6 @@
 import cn from "classnames";
 import styles from "./Item.module.sass";
+import styles2 from "./Item.module.scss";
 import Image from "@/components/Image";
 
 type ItemProps = {
@@ -12,7 +13,7 @@ const Item = ({ className, itemWrapClass, item }: ItemProps) => (
     <div className={cn(styles.item, className)}>
         <div className={cn(styles.wrap, itemWrapClass)}>
             <div className={cn("content", styles.content)}>{item.content}</div>
-            {item.blockquote && (
+            {/* {item.blockquote && (
                 <div className={styles.blockquote}>
                     <div className={cn("h3", styles.comment)}>
                         {item.blockquote.content}
@@ -36,7 +37,10 @@ const Item = ({ className, itemWrapClass, item }: ItemProps) => (
                         </div>
                     </div>
                 </div>
-            )}
+            )} */}
+            <div className={styles.heroLink}>
+                    <a className={cn("button", styles2.tHeroLink)} href="">{item.slugLabel}</a>
+            </div>
         </div>
         <div className={styles.preview}>
             <div className={styles.inner}>

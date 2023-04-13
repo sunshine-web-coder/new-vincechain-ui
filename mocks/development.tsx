@@ -41,35 +41,39 @@ export const development = [
 
 export const developmentTechnology = [
     {
-        title: "Globally-accesible, transformational API",
+        title: "Discover APIs on Vince Chain",
         content:
-            "Your data can be transformed, organized, and shared across applications for anyone to query with just a few keystrokes.",
+            "Customize your dApp with Vince Chain APIs. Fast and easy integration interface.",
         image: "/images/development-pic-3.png",
         color: "#6F5BEB",
-        url: "/technology",
+        slug: "",
+        slugLabel: "View Vince Chain APIs"
     },
     {
-        title: "Resilient, automated layer security",
+        title: "Deploy Smart Contract and DApps",
         content:
-            "Empower your blockchain security without sacrificing crucial resources and accessibility to its members.",
+            "All you need to deploy your custom dApp and smart contracts on Vince Chain",
         image: "/images/development-pic-2.png",
         color: "#89EB5B",
-        url: "/technology",
+        slug: "",
+        slugLabel: "Get Started"
     },
     {
-        title: "Seamless connection to any API tools",
+        title: "Vince Chain Security",
         content:
-            "Your data can be transformed, organized, and shared across applications for anyone to query with just a few keystrokes.",
+            "Learn about Vince Chain’s security policy, including how to maintain security protocols while building on the network.",
         image: "/images/development-pic-5.png",
         color: "#E87A95",
-        url: "/technology",
+        slug: "",
+        slugLabel: "Learn More"
     },
     {
-        title: "Reliable, tamper-proof network",
+        title: "Become an Active Contributor",
         content:
-            "Use cryptographic proofs to connect highly accurate and available data/APIs to any smart contract.",
+            "Vince Chain is open to ideas from the community. Become an active contributor and help the network grow and improve its services.",
         image: "/images/development-pic-1.png",
         color: "#EBB15B",
-        url: "/technology",
+        slug: "",
+        slugLabel: "Learn More"
     },
 ];

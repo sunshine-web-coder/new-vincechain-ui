@@ -1,6 +1,7 @@
 import { Parallax } from "react-scroll-parallax";
 import cn from "classnames";
 import styles from "./Main.module.sass";
+import styles2 from "./Main.module.scss";
 import Image from "@/components/Image";
 import Scroll from "@/components/Scroll";
 
@@ -19,13 +20,15 @@ const Main = ({ scrollToRef }: MainProps) => (
     <div className={cn("section", styles.section)}>
         <div className={cn("container", styles.container)}>
             <div className={styles.wrap}>
-                <div className={styles.stage}>technology</div>
+                <div className={styles.stage}>Build</div>
                 <div className={cn("h1", styles.title)}>
-                    Built by developers, for developers.
+                    Vince Chain Developer Manual
                 </div>
                 <div className={styles.info}>
-                    Onix delivers tamper-proof inputs, outputs, and computations
-                    to support advanced smart contracts on any blockchain
+                    Explore all the resources and tools you need to build and deploy excellent dApps and Smart Contracts on Vince Chain.
+                </div>
+                <div className={styles.heroLink}>
+                    <a className={cn("button", styles2.tHeroLink)} href="https://vincechain.gitbook.io/vince-chain-documentation/">Start Building</a>
                 </div>
             </div>
             <div className={styles.images}>

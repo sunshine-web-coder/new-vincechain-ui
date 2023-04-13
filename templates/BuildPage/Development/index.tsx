@@ -1,6 +1,7 @@
 import { Parallax } from "react-scroll-parallax";
 import cn from "classnames";
 import styles from "./Development.module.sass";
+import styles2 from "./Development.module.scss";
 import Card from "@/components/Card";
 import Image from "@/components/Image";
 import Icon from "@/components/Icon";
@@ -20,17 +21,16 @@ const Development = ({}: DevelopmentProps) => (
         <div className={cn("container", styles.container)}>
             <div className={styles.head}>
                 <h2 className={cn("h2", styles.title)}>
-                    Onix makes blockchain development accessible for everyone.
+                    Explore More on Vince Chain
                 </h2>
                 <div className={styles.info}>
-                    Onix&apos;s complete suite of blockchain-scaling solutions.
+                    Other resources to set you on the right path in your Vince Chain dApp development journey!
                 </div>
             </div>
             <div className={styles.list}>
                 {developmentTechnology.map((item, index) => (
                     <Card
                         className={styles.card}
-                        url={item.url}
                         color={item.color}
                         key={index}
                         animateIn="fadeInDown"
@@ -49,12 +49,12 @@ const Development = ({}: DevelopmentProps) => (
                             </div>
                         </div>
                         <div className={styles.foot}>
-                            <div
-                                className={styles.more}
+                            <a href={item.slug}
+                                className={styles2.more}
                                 style={{ color: item.color }}
                             >
-                                Learn more
-                            </div>
+                                {item.slugLabel}
+                            </a>
                             <Icon
                                 className={styles.arrow}
                                 name="arrow-right"

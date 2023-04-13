@@ -1,8 +1,8 @@
 import type { NextPage } from "next";
-import TechnologyPage from "@/templates/TechnologyPage";
+import BuildPage from "@/templates/BuildPage";
 
 const Home: NextPage = () => {
-    return <TechnologyPage />;
+    return <BuildPage />;
 };
 
 export default Home;

@@ -1,0 +1,40 @@
+.social_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .social {
+    display: flex;
+    gap: 25px;
+    a {
+      button {
+        color: #ffffff;
+        font-size: 20px;
+        transition: color 0.2s;
+        // border: 2px solid #fdb820;
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+        background-color: #3c3c3d;
+
+        &:hover {
+          color: #d69813;
+          border: 2px solid #d69813;
+        }
+      }
+    }
+    @media screen and (max-width: 500px) {
+      max-width: 100%;
+
+      a {
+        button {
+          max-width: 35px;
+          height: 35px;
+        }
+      }
+    }
+  }
+}

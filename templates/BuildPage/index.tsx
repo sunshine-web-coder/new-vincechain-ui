@@ -3,6 +3,7 @@ import Layout from "@/components/Layout";
 import Main from "./Main";
 import Details from "./Details";
 import Development from "./Development";
+import Resources from "./Resources";
 import Community from "./Community";
 import AboutUs from "./AboutUs";
 import Posts from "./Posts";
@@ -12,7 +13,7 @@ import JoinCommunity from "@/components/JoinCommunity";
 
 import { reviews } from "@/mocks/reviews";
 
-const TechnologyPage = () => {
+const BuildPage = () => {
     const scrollToRef = useRef(null);
 
     return (
@@ -20,14 +21,15 @@ const TechnologyPage = () => {
             <Main scrollToRef={scrollToRef} />
             <Details scrollToRef={scrollToRef} />
             <Development />
+            <Resources />
             <Community />
-            <AboutUs />
+            {/* <AboutUs />
             <Posts />
             <Faq />
             <Reviews reviews={reviews} />
-            <JoinCommunity title="Download our whitepaper" />
+            <JoinCommunity title="Download our whitepaper" /> */}
         </Layout>
     );
 };
 
-export default TechnologyPage;
+export default BuildPage;

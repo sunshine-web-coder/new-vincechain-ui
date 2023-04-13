@@ -4,7 +4,7 @@ import styles from "./Details.module.sass";
 import Image from "@/components/Image";
 import Item from "./Item";
 
-import { details } from "@/constants/detailsTechnology";
+import { details } from "@/constants/detailsBuild";
 
 type DetailsProps = {
     scrollToRef: any;
