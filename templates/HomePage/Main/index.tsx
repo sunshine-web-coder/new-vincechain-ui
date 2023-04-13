@@ -35,7 +35,7 @@ const Main = ({ scrollToRef }: MainProps) => (
                         2000, // Waits 2s
                         'Gaming', // Types 'Three' without deleting 'Two'
                         3000, // Waits 3s
-                        'web 3',
+                        'web3',
                         4000, // Waits 4s
                         '',
                         () => {
