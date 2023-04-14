@@ -27,9 +27,9 @@ const Main = ({ scrollToRef }: MainProps) => (
                 <div className={styles.info}>
                     Explore all the resources and tools you need to build and deploy excellent dApps and Smart Contracts on Vince Chain.
                 </div>
-                <div className={styles.heroLink}>
+                {/* <div className={styles.heroLink}>
                     <a className={cn("button", styles2.tHeroLink)} href="https://vincechain.gitbook.io/vince-chain-documentation/">Start Building</a>
-                </div>
+                </div> */}
             </div>
             <div className={styles.images}>
                 <div className={styles.image}>
@@ -53,7 +53,7 @@ const Main = ({ scrollToRef }: MainProps) => (
                 ))}
             </div>
             <Scroll
-                className={styles.scroll}
+                className={styles2.scroll}
                 title="SCROLL TO EXPLORE"
                 onScroll={() =>
                     scrollToRef.current.scrollIntoView({
