@@ -18,7 +18,7 @@ export const details = [
         //     content:
         //         "“It’s not just that is fast, the scalability and ease of use is simply unparalleled, truly mindblowing”",
         // },
-        image: "/images/technology-pic-1.png",
+        image: "/images/technology-pic-1.svg",
         // color: "#E87A95",
         slug: "https://vincechain.gitbook.io/vince-chain-documentation/5.-technical-documentation",
         slugLabel: "Learn About Vince Chain"
@@ -37,7 +37,7 @@ export const details = [
                 </ul> */}
             </>
         ),
-        image: "/images/technology-pic-2.png",
+        image: "/images/technology-pic-2.svg",
         // color: "#EBB15B",
         slug: "",
         slugLabel: "Launch a node on Vince Chain"
@@ -58,7 +58,7 @@ export const details = [
         //     content:
         //         "“It’s not just that is fast, the scalability and ease of use is simply unparalleled, truly mindblowing”",
         // },
-        image: "/images/technology-pic-1.png",
+        image: "/images/technology-pic-1.svg",
         // color: "#E87A95",
         slug: "https://vincechain.gitbook.io/vince-chain-documentation/5.-technical-documentation/set-up-validators",
         slugLabel: "Start Here"
