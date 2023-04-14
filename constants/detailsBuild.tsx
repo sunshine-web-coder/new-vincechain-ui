@@ -20,7 +20,7 @@ export const details = [
         // },
         image: "/images/technology-pic-1.png",
         // color: "#E87A95",
-        slug: "",
+        slug: "https://vincechain.gitbook.io/vince-chain-documentation/5.-technical-documentation",
         slugLabel: "Learn About Vince Chain"
     },
     {
@@ -60,7 +60,7 @@ export const details = [
         // },
         image: "/images/technology-pic-1.png",
         // color: "#E87A95",
-        slug: "",
+        slug: "https://vincechain.gitbook.io/vince-chain-documentation/5.-technical-documentation/set-up-validators",
         slugLabel: "Start Here"
     },
 ];

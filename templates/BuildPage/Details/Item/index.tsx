@@ -39,7 +39,7 @@ const Item = ({ className, itemWrapClass, item }: ItemProps) => (
                 </div>
             )} */}
             <div className={styles.heroLink}>
-                    <a className={cn("button", styles2.tHeroLink)} href="">{item.slugLabel}</a>
+                    <a className={cn("button", styles2.tHeroLink)} href={item.slug}>{item.slugLabel}</a>
             </div>
         </div>
         <div className={styles.preview}>

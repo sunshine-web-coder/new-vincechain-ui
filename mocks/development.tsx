@@ -46,7 +46,7 @@ export const developmentTechnology = [
             "Customize your dApp with Vince Chain APIs. Fast and easy integration interface.",
         image: "/images/development-pic-3.png",
         color: "#6F5BEB",
-        slug: "",
+        slug: "https://vincechain.gitbook.io/vince-chain-documentation/5.-technical-documentation/keys-and-wallets",
         slugLabel: "View Vince Chain APIs"
     },
     {
@@ -56,7 +56,7 @@ export const developmentTechnology = [
         image: "/images/development-pic-2.png",
         color: "#89EB5B",
         slug: "",
-        slugLabel: "Get Started"
+        slugLabel: ""
     },
     {
         title: "Vince Chain Security",
@@ -65,7 +65,7 @@ export const developmentTechnology = [
         image: "/images/development-pic-5.png",
         color: "#E87A95",
         slug: "",
-        slugLabel: "Learn More"
+        slugLabel: ""
     },
     {
         title: "Become an Active Contributor",
@@ -73,7 +73,7 @@ export const developmentTechnology = [
             "Vince Chain is open to ideas from the community. Become an active contributor and help the network grow and improve its services.",
         image: "/images/development-pic-1.png",
         color: "#EBB15B",
-        slug: "",
+        slug: "https://t.me/vincechain",
         slugLabel: "Learn More"
     },
 ];
