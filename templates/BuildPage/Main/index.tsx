@@ -20,7 +20,7 @@ const Main = ({ scrollToRef }: MainProps) => (
     <div className={cn("section", styles.section)}>
         <div className={cn("container", styles.container)}>
             <div className={styles.wrap}>
-                <div className={styles.stage}>Build</div>
+                {/* <div className={styles.stage}>Build</div> */}
                 <div className={cn("h1", styles.title)}>
                     Vince Chain Developer Manual
                 </div>

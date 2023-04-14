@@ -55,11 +55,11 @@ const Development = ({}: DevelopmentProps) => (
                             >
                                 {item.slugLabel}
                             </a>
-                            <Icon
+                            {/* <Icon
                                 className={styles.arrow}
                                 name="arrow-right"
                                 size="26"
-                            />
+                            /> */}
                         </div>
                     </Card>
                 ))}

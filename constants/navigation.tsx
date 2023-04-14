@@ -3,11 +3,11 @@ export const headerNavigation = [
     title: "Home",
     url: "/",
   },
-  {
-    title: "Community",
-    url: "https://t.me/vincechain",
-    external: true,
-  },
+  // {
+  //   title: "Community",
+  //   url: "https://t.me/vincechain",
+  //   external: true,
+  // },
   {
     title: "Whitepaper",
     url: "https://vincechain.gitbook.io/vince-chain-documentation/",

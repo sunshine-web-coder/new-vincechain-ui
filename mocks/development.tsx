@@ -41,7 +41,9 @@ export const development = [
 
 export const developmentTechnology = [
     {
-        title: "Discover APIs on Vince Chain",
+        title: (
+            <p>Discover APIs on <br /> Vince Chain</p>
+        ),
         content:
             "Customize your dApp with Vince Chain APIs. Fast and easy integration interface.",
         image: "/images/development-pic-3.png",
@@ -50,16 +52,20 @@ export const developmentTechnology = [
         slugLabel: "View Vince Chain APIs"
     },
     {
-        title: "Deploy Smart Contract and DApps",
+        title: (
+            <p>Deploy Smart <br /> Contract and DApps</p>
+        ),
         content:
             "All you need to deploy your custom dApp and smart contracts on Vince Chain",
         image: "/images/development-pic-2.png",
         color: "#89EB5B",
-        slug: "",
-        slugLabel: ""
+        slug: "https://vincechain.gitbook.io/vince-chain-documentation/2.-vince-chain-x-developers/building-dapps-and-smart-contracts",
+        slugLabel: "Get Started"
     },
     {
-        title: "Vince Chain Security",
+        title: (
+            <p>Vince Chain <br /> Security</p>
+        ),
         content:
             "Learn about Vince Chain’s security policy, including how to maintain security protocols while building on the network.",
         image: "/images/development-pic-5.png",

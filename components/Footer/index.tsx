@@ -49,7 +49,7 @@ const Footer = ({}: FooterProps) => (
           ))}
         </div> */}
         {/* <Socials className={styles.socials} socials={socials} /> */}
-        <div className={styles2.social}>
+        {/* <div className={styles2.social}>
           {socialList.map((item, i) => (
             <a key={i}
               target="_blank"
@@ -59,7 +59,7 @@ const Footer = ({}: FooterProps) => (
               <button>{item.icon}</button>
             </a>
           ))}
-        </div>
+        </div> */}
       </div>
     </div>
   </footer>

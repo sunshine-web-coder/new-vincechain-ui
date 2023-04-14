@@ -58,7 +58,7 @@ export const details = [
         //     content:
         //         "“It’s not just that is fast, the scalability and ease of use is simply unparalleled, truly mindblowing”",
         // },
-        image: "/images/technology-pic-1.svg",
+        image: "/images/technology-pic-3.svg",
         // color: "#E87A95",
         slug: "https://vincechain.gitbook.io/vince-chain-documentation/5.-technical-documentation/set-up-validators",
         slugLabel: "Start Here"
