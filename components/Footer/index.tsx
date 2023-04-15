@@ -17,7 +17,7 @@ import { useState } from "react";
 type FooterProps = {};
 
 const Footer = ({}: FooterProps) => {
-
+  function openWidget() {}
   return (
     <footer className={styles.footer}>
       <div className={cn("container-wide", styles.container)}>

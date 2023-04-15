@@ -31,6 +31,8 @@ const Menu = ({ navigation, socials, onClick }: MenuProps) => {
   const [visible, setVisible] = useState<boolean>(false);
   const [loaded, setLoaded] = useState<boolean>(false);
 
+  function openWidget() {}
+
   useHotkeys("esc", () => setVisible(false), {
     enableOnTags: ["INPUT", "TEXTAREA"],
   });
