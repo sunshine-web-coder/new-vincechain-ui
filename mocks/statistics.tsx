@@ -19,8 +19,8 @@ export const statistics = [
         title: "Delegators on PoS",
         value: "1",
     },
-    // {
-    //     title: "Total transactions",
-    //     value: "0",
-    // },
+    {
+        title: "Average block time",
+        value: "5.0 seconds",
+    },
 ];
