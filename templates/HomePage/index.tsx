@@ -20,8 +20,8 @@ const HomePage = () => {
   return (
     <Layout>
       <Main scrollToRef={scrollToRef} />
-      <Solutions />
-      <Development scrollToRef={scrollToRef} />
+      <Solutions scrollToRef={scrollToRef} />
+      <Development />
       {/* <UnkSect /> */}
       <AboutUs />
       <Statistics />

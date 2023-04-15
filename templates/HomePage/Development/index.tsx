@@ -10,21 +10,18 @@ import Icon from "@/components/Icon";
 
 import { development } from "@/mocks/development";
 
-type DevelopmentProps = {
-    scrollToRef: any;
-};
+type DevelopmentProps = {};
 
-const Development = ({ scrollToRef }: DevelopmentProps) => {
+
+const Development = ({}: DevelopmentProps) => {
+    
     const ref =
         useRef<HTMLDivElement>() as React.MutableRefObject<HTMLInputElement>;
     const { events } = useDraggable(ref);
 
     return (
         <div className={cn("section", styles.section)}>
-            <div
-                className={cn("anchor", styles.anchor)}
-                ref={scrollToRef}
-            ></div>
+            
             <div className={cn("container-wide", styles.container)}>
                 <h2 className={cn("h2", styles.title)}>
                 The Vince Ecosystem.

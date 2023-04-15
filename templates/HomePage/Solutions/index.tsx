@@ -8,15 +8,21 @@ import Image from "@/components/Image";
 
 import { solutions, images } from "@/constants/solutions";
 
-type SolutionsProps = {};
+type SolutionsProps = {
+    scrollToRef: any;
+};
 
-const Solutions = ({}: SolutionsProps) => {
+const Solutions = ({scrollToRef}: SolutionsProps) => {
     const isMobile = useMediaQuery({
         query: "(max-width: 767px)",
     });
 
     return (
         <div className={cn("section", styles.section)}>
+            <div
+                className={cn("anchor", styles.anchor)}
+                ref={scrollToRef}
+            ></div>
             <div className={cn("container-small", styles.container)}>
                 <div className={styles.head}>
                     <div className={cn("h2", styles.title)}>

@@ -8,7 +8,7 @@ type ScrollProps = {
     row?: boolean;
     onScroll?: () => void;
 };
-
+ 
 const Scroll = ({
     className,
     mouseClassName,
