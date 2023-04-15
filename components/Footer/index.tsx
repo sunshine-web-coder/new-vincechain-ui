@@ -11,8 +11,13 @@ import { FaTelegramPlane, FaGithub, FaLinkedinIn } from "react-icons/fa";
 
 import { footerNavigation, documents } from "@/constants/navigation";
 import { socials } from "@/constants/socials";
+import Script from "next/script";
 
 type FooterProps = {};
+
+function openWidget() {
+  FreshworksWidget("open");
+}
 
 const Footer = ({}: FooterProps) => (
   <footer className={styles.footer}>
@@ -28,7 +33,7 @@ const Footer = ({}: FooterProps) => (
                   <ul className="list-unstyled">
                     {a.list.map((b, bkey) => (
                       <li key={bkey}>
-                        <a href={`${b.slug}`}>{b.title}</a>
+                        <a href={b.slug} onClick={() => b.toggle ? openWidget() : () => false }>{b.title}</a>
                       </li>
                     ))}
                   </ul>
@@ -36,6 +41,24 @@ const Footer = ({}: FooterProps) => (
               </div>
             ))}
         </div>
+      </div>
+      <div className="widget">
+        <Script>
+          {`
+                window.fwSettings={
+                    'widget_id':150000003011,
+                    };
+                    !function(){if("function"!=typeof window.FreshworksWidget){var n=function(){n.q.push(arguments)};n.q=[],window.FreshworksWidget=n}}()
+                    function openWidget() {FreshworksWidget('open', 'ticketForm');}
+                `}
+        </Script>
+        {/* <Script ></Script> */}
+        <Script
+          type="text/javascript"
+          src="https://widget.freshworks.com/widgets/150000003011.js"
+          async
+          defer
+        ></Script>
       </div>
       <div className={styles.row}>
         <div className={styles.copyright}>

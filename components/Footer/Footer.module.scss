@@ -1,3 +1,7 @@
+// .disableLink {
+//   pointer-events: none;
+//   cursor: pointer;
+// }
 .social {
   display: flex;
   gap: 20px;
@@ -31,7 +35,7 @@
 
 .d_flex {
   .fLogo {
-    img{
+    img {
       width: 260px;
       height: 35px;
     }
@@ -44,7 +48,7 @@
       position: relative;
       left: -10px;
 
-      img{
+      img {
         width: 220px;
         height: 40px;
       }

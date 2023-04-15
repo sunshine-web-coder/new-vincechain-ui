@@ -12,10 +12,12 @@ import Image from "@/components/Image";
 import { BsTwitter, BsYoutube, BsInstagram } from "react-icons/bs";
 import { FaTelegramPlane, FaGithub } from "react-icons/fa";
 import { socialList } from "@/constants/social";
+import Script from "next/script";
 
 type NavigationType = {
   title: string;
   url: string;
+  toggle?: boolean;
   external?: boolean;
 };
 
@@ -24,6 +26,11 @@ type MenuProps = {
   socials: any;
   onClick: () => void;
 };
+
+function openWidget() {
+  FreshworksWidget("open");
+}
+
 
 const Menu = ({ navigation, socials, onClick }: MenuProps) => {
   const [visible, setVisible] = useState<boolean>(false);
@@ -107,14 +114,15 @@ const Menu = ({ navigation, socials, onClick }: MenuProps) => {
                           {link.title}
                         </a>
                       ) : (
-                        <NavLink
+                        <a
                           className={cn("h2", styles.link)}
-                          activeClassName={styles.active}
+                          // activeClassName={styles.active}
                           href={link.url}
                           key={index}
+                          onClick={() => link.toggle ? openWidget() : () => false }
                         >
                           {link.title}
-                        </NavLink>
+                        </a>
                       )
                     )}
                   </nav>
@@ -161,6 +169,24 @@ const Menu = ({ navigation, socials, onClick }: MenuProps) => {
             document.body
           )
         : null}
+        <div className="widget">
+        <Script>
+          {`
+                window.fwSettings={
+                    'widget_id':150000003011,
+                    };
+                    !function(){if("function"!=typeof window.FreshworksWidget){var n=function(){n.q.push(arguments)};n.q=[],window.FreshworksWidget=n}}()
+                    function openWidget() {FreshworksWidget('open', 'ticketForm');}
+                `}
+        </Script>
+        {/* <Script ></Script> */}
+        <Script
+          type="text/javascript"
+          src="https://widget.freshworks.com/widgets/150000003011.js"
+          async
+          defer
+        ></Script>
+      </div>
     </div>
   );
 };

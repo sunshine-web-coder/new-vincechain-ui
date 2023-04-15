@@ -1,0 +1,14 @@
+.support {
+  padding: 45px;
+  padding-top: 100px;
+
+  @media screen and (max-width: 767px) {
+    padding-left: 23px;
+    padding-right: 23px;
+  }
+
+  .inner_support {
+    max-width: 1200px;
+    margin: auto;
+  }
+}

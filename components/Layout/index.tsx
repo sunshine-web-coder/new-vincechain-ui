@@ -12,7 +12,7 @@ type LayoutProps = {
     children: React.ReactNode;
 };
 
-const Layout = ({ layoutNoOverflow, children }: LayoutProps) => {
+const Layout = ({ layoutNoOverflow, children, openWidget }: LayoutProps) => {
     const { pathname } = useRouter();
 
     useEffect(() => {
@@ -30,7 +30,7 @@ const Layout = ({ layoutNoOverflow, children }: LayoutProps) => {
                     [styles.layoutNoOverflow]: layoutNoOverflow,
                 })}
             >
-                <Header />
+                <Header openWidget={openWidget} />
                 {children}
                 <Footer />
             </div>

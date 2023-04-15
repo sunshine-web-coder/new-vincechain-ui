@@ -18,7 +18,8 @@ export const headerNavigation = [
   },
   {
     title: "Contact",
-    url: "mailto:support@vincechain.com",
+    url: "javascript:void(0)",
+    toggle: "yes"
   },
 ];
 
@@ -48,8 +49,9 @@ export const footerNavigation = [
     title: "Individuals",
     list: [
       {
-        slug: "",
+        slug: "javascript:void(0)",
         title: "Help Center",
+        toggle: "yes"
       },
       {
         slug: "",

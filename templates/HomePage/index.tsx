@@ -12,28 +12,29 @@ import JoinCommunity from "@/components/JoinCommunity";
 import { posts } from "@/mocks/posts";
 import { reviews } from "@/mocks/reviews";
 import UnkSect from "./UnkSect";
+import Script from "next/script";
 
 const HomePage = () => {
-    const scrollToRef = useRef(null);
+  const scrollToRef = useRef(null);
 
-    return (
-        <Layout>
-            <Main scrollToRef={scrollToRef} />
-            <Solutions />
-            <Development scrollToRef={scrollToRef} />
-            {/* <UnkSect /> */}
-            <AboutUs />
-            <Statistics />
-            <Posts
-                className="section"
-                title="Stay Connected"
-                info="Be in the loop with the latest news and update from the development team & community."
-                posts={posts}
-            />
-            <Reviews reviews={reviews} />
-            {/* <JoinCommunity title="Want to get involved?" /> */}
-        </Layout>
-    );
+  return (
+    <Layout>
+      <Main scrollToRef={scrollToRef} />
+      <Solutions />
+      <Development scrollToRef={scrollToRef} />
+      {/* <UnkSect /> */}
+      <AboutUs />
+      <Statistics />
+      <Posts
+        className="section"
+        title="Stay Connected"
+        info="Be in the loop with the latest news and update from the development team & community."
+        posts={posts}
+      />
+      <Reviews reviews={reviews} />
+      {/* <JoinCommunity title="Want to get involved?" /> */}
+    </Layout>
+  );
 };
 
 export default HomePage;
