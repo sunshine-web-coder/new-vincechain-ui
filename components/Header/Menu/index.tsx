@@ -27,11 +27,6 @@ type MenuProps = {
   onClick: () => void;
 };
 
-function openWidget() {
-  FreshworksWidget("open");
-}
-
-
 const Menu = ({ navigation, socials, onClick }: MenuProps) => {
   const [visible, setVisible] = useState<boolean>(false);
   const [loaded, setLoaded] = useState<boolean>(false);
@@ -119,7 +114,9 @@ const Menu = ({ navigation, socials, onClick }: MenuProps) => {
                           // activeClassName={styles.active}
                           href={link.url}
                           key={index}
-                          onClick={() => link.toggle ? openWidget() : () => false }
+                          onClick={() =>
+                            link.toggle ? openWidget() : () => false
+                          }
                         >
                           {link.title}
                         </a>
@@ -169,7 +166,7 @@ const Menu = ({ navigation, socials, onClick }: MenuProps) => {
             document.body
           )
         : null}
-        <div className="widget">
+      <div className="widget">
         <Script>
           {`
                 window.fwSettings={
@@ -186,6 +183,11 @@ const Menu = ({ navigation, socials, onClick }: MenuProps) => {
           async
           defer
         ></Script>
+        <Script id="jell">
+          {function openWidget() {
+            FreshworksWidget("open");
+          }}
+        </Script>
       </div>
     </div>
   );
