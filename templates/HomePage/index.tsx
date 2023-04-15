@@ -30,7 +30,7 @@ const HomePage = () => {
                 info="Be in the loop with the latest news and update from the development team & community."
                 posts={posts}
             />
-            {/* <Reviews reviews={reviews} /> */}
+            <Reviews reviews={reviews} />
             {/* <JoinCommunity title="Want to get involved?" /> */}
         </Layout>
     );
