@@ -47,7 +47,7 @@ const AboutUs = ({}: AboutUsProps) => (
               </p>
             </div>
             <div className={styles.line}>
-              <a href="" className={cn("button", styles.button)} style={{marginRight: 15}}>
+              <a href="https://vincechain.gitbook.io/vince-chain-documentation/" className={cn("button", styles.button)} style={{marginRight: 15}}>
                 <span>Learn more</span>
               </a>
               <a href="" className={cn("button", styles.button)}>
@@ -72,7 +72,7 @@ const AboutUs = ({}: AboutUsProps) => (
             </div>
             <div className={styles.line}>
               <a
-                href="https://vincechain.gitbook.io/vince-chain-documentation/"
+                href="/build"
                 className={cn("button", styles.button)}
                 style={{ marginRight: 20 }}
               >
