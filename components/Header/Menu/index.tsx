@@ -169,7 +169,7 @@ const Menu = ({ navigation, socials, onClick }: MenuProps) => {
           )
         : null}
       <div className="widget">
-        <Script>
+        <Script id="mm">
           {`
                 window.fwSettings={
                     'widget_id':150000003011,
@@ -186,9 +186,9 @@ const Menu = ({ navigation, socials, onClick }: MenuProps) => {
           defer
         ></Script>
         <Script id="jell">
-          {function openWidget() {
-            FreshworksWidget("open");
-          }}
+          function openWidget() {
+            FreshworksWidget("open")
+          }
         </Script>
       </div>
     </div>
