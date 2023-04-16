@@ -15,8 +15,14 @@ import { socials } from "@/constants/socials";
 import Script from "next/script";
 import { useState } from "react";
 
-type FooterProps = {};
-
+type FooterProps = {
+  window: any
+};
+declare global {
+  interface Window {
+    FreshworksWidget: any
+  }
+}
 function openWidget() {
   window.FreshworksWidget('open');
 }
