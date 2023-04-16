@@ -17,9 +17,9 @@ import { useState } from "react";
 
 type FooterProps = {};
 
-// function openWidget() {
-//   FreshworksWidget("open");
-// }
+function openWidget() {
+  window.FreshworksWidget('open');
+}
 
 const Footer = ({}: FooterProps) => {
   // const [FreshworksWidget, setFreshworksWidget] = useState("")
@@ -41,9 +41,9 @@ const Footer = ({}: FooterProps) => {
                           <li key={bkey}>
                             <a
                               href={b.slug}
-                              // onClick={() =>
-                              //   b.toggle ? openWidget() : () => false
-                              // }
+                              onClick={() =>
+                                b.toggle ? openWidget() : () => false
+                              }
                             >
                               {b.title}
                             </a>
