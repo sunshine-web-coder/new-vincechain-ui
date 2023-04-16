@@ -18,6 +18,7 @@ import Head from "next/head";
 type NavigationType = {
   title: string;
   url: string;
+  toggle?: boolean;
   external?: boolean;
 };
 
@@ -27,9 +28,14 @@ type MenuProps = {
   onClick: () => void;
 };
 
-// function openWidget() {
-//   FreshworksWidget("open");
-// }
+declare global {
+  interface Window {
+    FreshworksWidget: any
+  }
+}
+function openWidget() {
+  window.FreshworksWidget('open');
+}
 
 const Menu = ({ navigation, socials, onClick }: MenuProps) => {
   const [visible, setVisible] = useState<boolean>(false);
@@ -114,14 +120,17 @@ const Menu = ({ navigation, socials, onClick }: MenuProps) => {
                             {link.title}
                           </a>
                         ) : (
-                          <NavLink
+                          <a
                             className={cn("h2", styles.link)}
-                            activeClassName={styles.active}
+                            // activeClassName={styles.active}
                             href={link.url}
                             key={index}
+                            onClick={() =>
+                              link.toggle ? openWidget() : () => false
+                            }
                           >
                             {link.title}
-                          </NavLink>
+                          </a>
                         )
                       )}
                     </nav>
