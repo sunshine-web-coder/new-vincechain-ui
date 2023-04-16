@@ -18,7 +18,7 @@ import Head from "next/head";
 type NavigationType = {
   title: string;
   url: string;
-  toggle: any;
+  toggle: string;
   external?: boolean;
 };
 
