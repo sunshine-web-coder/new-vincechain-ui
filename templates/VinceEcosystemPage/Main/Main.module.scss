@@ -1,0 +1,49 @@
+.d_Img {
+    img {
+      width: 70px;
+    }
+  }
+  .inner_vince_ecosystem {
+    margin-top: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    display: flex;
+    gap: 50px;
+    border: none;
+    border-top: 1px solid rgba(82, 82, 82, 0.247);
+    border-bottom: 1px solid rgba(82, 82, 82, 0.247);
+    padding-top: 30px;
+    padding-bottom: 30px;
+  
+    .left {
+      width: 100%;
+  
+      h3 {
+        color: #ffffff;
+        font-size: 40px;
+        line-height: 48px;
+      }
+      p {
+        margin-top: 15px;
+        margin-bottom: 15px;
+        color: grey;
+      }
+  
+      .tHeroLink {
+          margin-top: 25px;
+          font-size: 15px;
+          letter-spacing: 1px;
+          padding: 15px;
+          background-color: #372536;
+  
+          &:hover{
+              background-color: #3a2c39;
+          }
+        }
+    }
+    .right {
+      border: 1px solid red;
+      width: 100%;
+    }
+  }
+  

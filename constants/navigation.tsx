@@ -54,7 +54,7 @@ export const footerNavigation = [
         toggle: "yes"
       },
       {
-        slug: "",
+        slug: "/vince-ecosystem",
         title: "Ecosystem",
       },
       {
