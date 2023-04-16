@@ -19,7 +19,7 @@ export const headerNavigation = [
   {
     title: "Contact",
     url: "javascript:void(0)",
-    toggle: "yes"
+    toggle: true
   },
 ];
 

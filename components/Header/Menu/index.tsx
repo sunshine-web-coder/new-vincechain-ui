@@ -18,8 +18,8 @@ import Head from "next/head";
 type NavigationType = {
   title: string;
   url: string;
-  toggle: string;
   external?: boolean;
+  toggle?: boolean;
 };
 
 type MenuProps = {
