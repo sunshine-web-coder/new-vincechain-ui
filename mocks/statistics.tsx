@@ -9,11 +9,11 @@ export const statistics = [
     },
     {
         title: "Unique addresses",
-        value: "33",
+        value: "35",
     },
     {
         title: "Total transactions",
-        value: "49",
+        value: "57",
     },
     {
         title: "Delegators on PoS",
