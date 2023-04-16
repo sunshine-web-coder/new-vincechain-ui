@@ -169,7 +169,7 @@ const Menu = ({ navigation, socials, onClick }: MenuProps) => {
             )
           : null}
       </div>
-      <Script>
+      <Script id="freshdesk">
         {`
           window.fwSettings={
             'widget_id':150000003011,
@@ -178,7 +178,7 @@ const Menu = ({ navigation, socials, onClick }: MenuProps) => {
             function openWidget() {FreshworksWidget('open', 'ticketForm');}
         `}
       </Script>
-      <Script type='text/javascript' src='https://widget.freshworks.com/widgets/150000003011.js' async defer></Script> 
+      <Script id="freshdesk" type='text/javascript' src='https://widget.freshworks.com/widgets/150000003011.js' async defer></Script> 
     </>
   );
 };
