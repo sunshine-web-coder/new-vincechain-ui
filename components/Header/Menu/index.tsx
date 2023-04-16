@@ -178,7 +178,7 @@ const Menu = ({ navigation, socials, onClick }: MenuProps) => {
             function openWidget() {FreshworksWidget('open', 'ticketForm');}
         `}
       </Script>
-      <Script id="freshdesk" type='text/javascript' src='https://widget.freshworks.com/widgets/150000003011.js' async defer></Script> 
+      <Script type='text/javascript' src='https://widget.freshworks.com/widgets/150000003011.js' async defer></Script> 
     </>
   );
 };
