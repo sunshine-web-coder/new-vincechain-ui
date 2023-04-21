@@ -1,0 +1,55 @@
+.tou {
+  padding: 24px;
+
+  a {
+    color: #ffca00;
+
+    &:hover {
+      color: #d1a804;
+    }
+  }
+
+  .inner_tou {
+    .tou_list {
+      .title {
+        font-weight: bold;
+        font-size: 30px;
+        margin-top: 20px;
+      }
+      p {
+        margin-bottom: 10px;
+      }
+      .title2 {
+        font-weight: bold;
+      }
+      .olist {
+        ol {
+          margin-top: 5px;
+          list-style-type: decimal;
+          margin-left: 40px;
+        }
+      }
+      .ulist {
+        li {
+          margin-top: 5px;
+          list-style-type: disc;
+          margin-left: 40px;
+        }
+      }
+      .aList {
+        li {
+          margin-top: 5px;
+          list-style-type: lower-alpha;
+          margin-left: 40px;
+        }
+      }
+      .romanlist {
+        li {
+          margin-top: 5px;
+          list-style-type: upper-roman;
+          margin-left: 40px;
+        }
+      }
+    }
+  }
+}

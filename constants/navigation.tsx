@@ -71,7 +71,7 @@ export const footerNavigation = [
         title: "Privacy Policy",
       },
       {
-        slug: "",
+        slug: "/terms-of-use",
         title: "Terms of Use",
       },
     ],
