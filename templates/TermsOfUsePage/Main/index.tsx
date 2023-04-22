@@ -19,7 +19,7 @@ const Main = ({}: DevelopmentProps) => {
 //   const { events } = useDraggable(ref);
 
   return (
-    <div className={cn("section", styles.section)} style={{ paddingTop: 130 }}>
+    <div className={cn("section", styles2.section)} style={{ paddingTop: 130 }}>
       <div className={cn("container-wide", styles.container)}>
         <h2 className={cn("h2", styles.title)}>Vince Chain Terms of Service</h2>
         <div className={styles2.tou}>
