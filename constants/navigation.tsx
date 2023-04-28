@@ -67,7 +67,7 @@ export const footerNavigation = [
     title: "Press Kits",
     list: [
       {
-        slug: "",
+        slug: "/privacy-policy",
         title: "Privacy Policy",
       },
       {
