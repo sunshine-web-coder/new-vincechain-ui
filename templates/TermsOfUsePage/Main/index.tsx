@@ -8,16 +8,9 @@ import Card from "@/components/Card";
 import Image from "@/components/Image";
 import Icon from "@/components/Icon";
 
-import { development } from "@/mocks/development";
 import Link from "next/link";
 
-type DevelopmentProps = {};
-
-const Main = ({}: DevelopmentProps) => {
-//   const ref =
-//     useRef<HTMLDivElement>() as React.MutableRefObject<HTMLInputElement>;
-//   const { events } = useDraggable(ref);
-
+const Main = ({}) => {
   return (
     <div className={cn("section", styles2.section)} style={{ paddingTop: 130 }}>
       <div className={cn("container-wide", styles.container)}>
@@ -56,13 +49,13 @@ const Main = ({}: DevelopmentProps) => {
                 <p>Any service or content (including data, information, product, tools, fiat gateways, features, links, or service) provided by a third party that may be displayed, included, or made available on Vince Chain.</p>
 
                 <p className={styles2.title2}>Website and Platform </p>
-                <p>Vince Chain accessible from “<a href="https://www.vincechain.com/">https://www.vincechain.com/</a>," including all the instructions, announcements, statements, letters of consent, and Content that have been and will be subsequently released by Vince Chain Labs and its subsidiaries (related directly or through third-party whitelisting as presented on <a href="https://www.vincechain.com/">https://www.vincechain.com/</a>) or through its Help Center.</p>
+                <p>Vince Chain accessible from &quot;<a href="https://www.vincechain.com/">https://www.vincechain.com/</a>&quot; including all the instructions, announcements, statements, letters of consent, and Content that have been and will be subsequently released by Vince Chain Labs and its subsidiaries (related directly or through third-party whitelisting as presented on <a href="https://www.vincechain.com/">https://www.vincechain.com/</a>) or through its Help Center.</p>
 
                 <p className={styles2.title2}>“You, User, Your”</p>
                 <p>The individual accessing or using the Service, or the company, or other legal entity on behalf of which such individual is accessing or using the Service, as applicable, who meet the criteria and conditions stipulated by Vince Chain through these Terms.</p>
 
                 <p className={styles2.title2}>Digital Currency</p>
-                <p>Refers to any virtual currency traded or used to perform transactions on Vince Chain and its Product. Just like any digital asset, Digital Currencies' values (as stipulated in these Terms) may experience regular significant fluctuations, which could pose substantial risks of losses during interactions (buying, selling, holding, investing) with these Digital Currencies.</p>
+                <p>Refers to any virtual currency traded or used to perform transactions on Vince Chain and its Product. Just like any digital asset, Digital Currencies&apos; values (as stipulated in these Terms) may experience regular significant fluctuations, which could pose substantial risks of losses during interactions (buying, selling, holding, investing) with these Digital Currencies.</p>
                 <p className={styles2.olist}>By using Vince Chain services and its digital currencies, you acknowledge and agree that:
                     <ol>
                         <li>You know the risks associated with using or transacting with digital currencies.</li>
@@ -181,10 +174,10 @@ const Main = ({}: DevelopmentProps) => {
                                 <li>take improper use of our support services or submit false reports of abuse or misconduct;</li>
                                 <li>delete the copyright or other proprietary rights notice from any Content;</li>
                                 <li>attempt to impersonate another user or person or use the username of another user;</li>
-                                <li>upload or transmit (or attempt to upload or to transmit) any material that acts as a passive or active information collection or transmission mechanism, including, without limitation, clear graphics interchange formats ("gifs"), 1×1 pixels, web bugs, cookies, or other similar devices (sometimes referred to as "spyware" or "passive collection mechanisms" or "PCMs");</li>
+                                <li>upload or transmit (or attempt to upload or to transmit) any material that acts as a passive or active information collection or transmission mechanism, including, without limitation, clear graphics interchange formats (&quot;gifs&quot;), 1×1 pixels, web bugs, cookies, or other similar devices (sometimes referred to as &quot;spyware&quot; or &quot;passive collection mechanisms&quot; or &quot;PCMs&quot;);</li>
                                 <li>harass, annoy, intimidate, or threaten any of our employees or agents engaged in providing any portion of the Services to you;</li>
                                 <li>attempt to bypass any measures of the Services designed to prevent or restrict access to Vince Chain Services or any portion of the Services;</li>
-                                <li>copy or adapt the Services' software, including but not limited to Flash, PHP, HTML, JavaScript, or other code;</li>
+                                <li>copy or adapt the Services&apos; software, including but not limited to Flash, PHP, HTML, JavaScript, or other code;</li>
                                 <li>use the Services as part of any effort to compete with us or otherwise use the Services and/or the Content for any revenue-generating endeavor or commercial enterprise.</li>
                             </ul>
                         </li>
@@ -197,11 +190,11 @@ const Main = ({}: DevelopmentProps) => {
             <div className={styles2.tou_list}>
                 <p className={styles2.title}>8. Terms on Content Submissions</p>
 
-                <p>Please review this section and the "Guidelines on Using the Service" section carefully prior to using Vince Chain Services to understand the (a) rights you give us and (b) obligations you have when you post or upload any content on or through Vince Chain Services.</p>
-                <p>By directly sending us any question, comment, suggestion, idea, feedback, or other information about the Services (generally referred to as "Submissions"), you agree to assign to us all intellectual property rights on such Submission. You agree that we shall own this Submission and be entitled to its unrestricted use and dissemination for any lawful purpose, commercial or otherwise, without prior notice, acknowledgment, or compensation to you.</p>
+                <p>Please review this section and the &quot;Guidelines on Using the Service&quot; section carefully prior to using Vince Chain Services to understand the (a) rights you give us and (b) obligations you have when you post or upload any content on or through Vince Chain Services.</p>
+                <p>By directly sending us any question, comment, suggestion, idea, feedback, or other information about the Services (generally referred to as &quot;Submissions&quot;), you agree to assign to us all intellectual property rights on such Submission. You agree that we shall own this Submission and be entitled to its unrestricted use and dissemination for any lawful purpose, commercial or otherwise, without prior notice, acknowledgment, or compensation to you.</p>
                 <p>You are responsible for what you post or upload on Vince Chain through its community channels, blog, GitHub repository, DAO governance protocols, or any other method you may upload submissions on Vince Chain. By sending us Submissions through any part of the Services you:
                     <ul className={styles2.romanlist}>
-                        <li>confirm that you have read and agree with our "Guidelines on Using the Service" and will not post, send, publish, upload, or transmit through the Services any Submission that is illegal, harassing, hateful, harmful, defamatory, obscene, bullying, abusive, discriminatory, threatening to any person or group, sexually explicit, false, inaccurate, deceitful, or misleading;</li>
+                        <li>confirm that you have read and agree with our &quot;Guidelines on Using the Service&quot; and will not post, send, publish, upload, or transmit through the Services any Submission that is illegal, harassing, hateful, harmful, defamatory, obscene, bullying, abusive, discriminatory, threatening to any person or group, sexually explicit, false, inaccurate, deceitful, or misleading;</li>
                         <li>to the extent permissible by applicable law, waive any and all moral rights to any such Submission;</li>
                         <li>warrant that any such Submission is original to you or that you have the necessary rights and licenses to submit such Submissions and that you have full authority to grant us the above-mentioned rights in relation to your Submissions; and</li>
                         <li>warrant and represent that your Submissions do not constitute confidential information</li>
@@ -213,7 +206,7 @@ const Main = ({}: DevelopmentProps) => {
             <div className={styles2.tou_list}>
                 <p className={styles2.title}>9. User-Generated Content Terms</p>
 
-                <p>Vince Chain Services may provide you with the opportunity to create, submit, post, display, transmit, perform, publish, distribute, or broadcast content and materials to us or on the Services, including but not limited to text, writings, video, audio, photographs, graphics, comments, suggestions, or personal information or other material (hereafter collectively referred to as "Content"). Other users of Vince Chain Services, including third-party websites, may be able to view your Content on Vince Chain. Therefore, your published Content may be treated in accordance with Vince Chain’s Privacy Policy.</p>
+                <p>Vince Chain Services may provide you with the opportunity to create, submit, post, display, transmit, perform, publish, distribute, or broadcast content and materials to us or on the Services, including but not limited to text, writings, video, audio, photographs, graphics, comments, suggestions, or personal information or other material (hereafter collectively referred to as &quot;Content&quot;). Other users of Vince Chain Services, including third-party websites, may be able to view your Content on Vince Chain. Therefore, your published Content may be treated in accordance with Vince Chain’s Privacy Policy.</p>
 
                 <p>When you create any Content, you represent and warrant that:
                     <ul className={styles2.romanlist}>
@@ -231,7 +224,7 @@ const Main = ({}: DevelopmentProps) => {
 
             <div className={styles2.tou_list}>
                 <p className={styles2.title}>10. Third-Party Websites and Content Terms</p>
-                <p>Vince Chain is a peer-to-peer (P2P) Web3 Service committed to helping you deploy interoperable decentralized applications (dApps) and smart contracts that bridge between Ethereum Virtual Machines (EVM) and the Cosmos blockchain. Vince Chain Services may contain (via the Website “<a href="https://www.vincechain.com/">https://www.vincechain.com/</a>”) links to other websites (collectively called "Third-Party Websites") as well as articles, photographs, text, graphics, pictures, designs, music, sound, video, information, applications, software, and other content or items belonging to or originating from third parties ("Third-Party Content").</p>
+                <p>Vince Chain is a peer-to-peer (P2P) Web3 Service committed to helping you deploy interoperable decentralized applications (dApps) and smart contracts that bridge between Ethereum Virtual Machines (EVM) and the Cosmos blockchain. Vince Chain Services may contain (via the Website “<a href="https://www.vincechain.com/">https://www.vincechain.com/</a>”) links to other websites (collectively called &quot;Third-Party Websites&quot;) as well as articles, photographs, text, graphics, pictures, designs, music, sound, video, information, applications, software, and other content or items belonging to or originating from third parties (&quot;Third-Party Content&quot;).</p>
                 <p>Vince Chain may not investigate, monitor, or check for accuracy, appropriateness, or completeness of Third-Party Websites and Third-Party Content, including but not limited to tokens, applications, products, or tools in its ecosystem, and we are not responsible for any Third-Party Websites accessed through the Services or any Third-Party Content posted on, available through, or installed from Vince Chain, including the content, accuracy, offensiveness, opinions, reliability, privacy practices, or other policies of or contained in the Third-Party Websites or the Third-Party Content.</p>
                 <p>The availability or inclusion of, linking to, or permitting the use or installation of any Third-Party Websites or any Third-Party Content does not imply approval or endorsement thereof by us. If you decide to leave Vince Chain and access a Third-Party Website or to use or install any Third-Party Content, you do so at your own risk, and you should be aware these Terms no longer cover you. You should review the applicable terms and policies, including privacy and data gathering practices, of any website to which you navigate from the Services or relate to any applications you use or install from the Services.</p>
                 <p>You are solely responsible for corroborating the legitimacy and authenticity of tokens you purchase or hold from third parties available or connected, directly or indirectly, to Vince Chain Services. Any purchases you make through Third-Party Websites will be through other websites and from other companies, and we take no responsibility whatsoever in relation to such purchases, which are exclusively between you and the applicable third party. We do not and cannot guarantee that any tokens available on Vince Chain will always remain available to be bought, sold, or transferred.</p>
