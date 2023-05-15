@@ -104,7 +104,7 @@ export const footerNavigation = [
         title: "Instagram",
       },
       {
-        slug: "https://www.linkedin.com/company/vangold-finance",
+        slug: "http://www.linkedin.com/company/vince-chain",
         title: "LinkedIn",
       },
     ],
